@@ -1,4 +1,6 @@
-<?php ?>
+<?php
+    include_once 'functions.php';
+?>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -14,6 +16,11 @@
                 <tbody>
                     <tr>
                         <td>
+                            <img src="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
                             <span class="style1">
                                 <b>
                                     <big>Pronto Timing System Live Timing</big>
@@ -25,9 +32,7 @@
                     <tr>
                         <td>
                             <span class="style1">
-                                <big>2020 IndySCCA Solo</big>
-                                <br />
-                                <big>July 25, 2020</big>
+                                <?php include 'eventName.html' ?>
                             </span>
                         </td>
                     </tr>
@@ -40,7 +45,7 @@
         <!-- Event Supps -->
         <div align="center">
             <span class="style1">
-                <a href="./Event_Supps.pdf">Event Supps and Schedule</a>
+                <?php echo fileexists("Event_Supps.pdf", "Event Supps and Schedule", false)?>
             </span>
         </div>
 
@@ -49,7 +54,7 @@
         <!-- FM Channel -->
         <div align="center">
             <span class="style1">
-                <b>Local Site FM Channel: 90.3</b>
+                <b>Local Site FM Channel: </b>
             </span>
         </div>
 
@@ -58,7 +63,7 @@
         <!-- Run Ticker -->
         <div align="center">
             <span class="style1">
-                <!-- ticker -->
+                <?php include 'RunTickerTable.php' ?>
             </span>
         </div>
 
@@ -67,172 +72,62 @@
         <!-- List of classes -->
         <div align="center">
             <span class="style1">
-                <!-- classes -->
-                <table style="width:90%" id="tbl01" class="w3-table w2-striped w3-border w3-bordered w3-centered">
+                <?php include 'classes.php' ?>
+            </span>
+        </div>
+
+        <br />
+
+        <!-- PAX -->
+        <div align="center">
+            <span class="style1">
+                <table style="width:90%" id="tbl01" class="w3-table w3-striped w3-border w3-bordered w3-centered">
                     <tbody>
-                        <tr class="w3-black" align="center" valign="middle">
-                            <td>
-                                <font face="Arial" size="+1">
-                                    <b>STREET</b>
+                        <tr class="w3-black" valign="bottom">
+                            <th align="center" colspan="3">
+                                <font face="Arial">
+                                    <b>PAX</b>
                                 </font>
-                            </td>
-                            <td>
-                                <font face="Arial" size="+1">
-                                    <b>STREET TOURING</b>
-                                </font>
-                            </td>
-                            <td>
-                                <font face="Arial" size="+1">
-                                    <b>STREET PREPARED</b>
-                                </font>
-                            </td>
-                            <td>
-                                <font face="Arial" size="+1">
-                                    <b>PREPARED</b>
-                                </font>
-                            </td>
-                            <td>
-                                <font face="Arial" size="+1">
-                                    <b>STREET MOD/CAM</b>
-                                </font>
-                            </td>
-                            <td>
-                                <font face="Arial" size="+1">
-                                    <b>MODIFIED</b>
-                                </font>
-                            </td>
+                            </th>
                         </tr>
 
                         <tr valign="bottom">
                             <td align="center">
                                 <font face="Arial">
-                                    <?php
-                                        if (file_exists("SS.php"))
-                                        {
-                                            echo '<b>SS</b>';
-                                        } else {
-                                            echo 'SS';
-                                        }
-                                    ?>
-                                    /
-                                    <?php
-                                        if (file_exists("SSL.php"))
-                                        {
-                                            echo '<b>SSL</b>';
-                                        } else {
-                                            echo 'SSL';
-                                        }
-                                    ?>
+                                    <?php echo fileexists("PaxIndexDay1.html", "PAX Day 1") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php
-                                        if (file_exists("STH.php"))
-                                        {
-                                            echo '<b>STH</b>';
-                                        } else {
-                                            echo 'STH';
-                                        }
-                                    ?>
-                                    /
-                                    <?php
-                                        if (file_exists("STHL.php"))
-                                        {
-                                            echo '<b>STHL</b>';
-                                        } else {
-                                            echo 'STHL';
-                                        }
-                                    ?>
+                                    <?php echo fileexists("PaxIndexDay2.html", "PAX Day 2") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php
-                                        if (file_exists("SSP.php"))
-                                        {
-                                            echo '<b>SSP</b>';
-                                        } else {
-                                            echo 'SSP';
-                                        }
-                                    ?>
-                                    /
-                                    <?php
-                                        if (file_exists("SSPL.php"))
-                                        {
-                                            echo '<b>SSPL</b>';
-                                        } else {
-                                            echo 'SSPL';
-                                        }
-                                    ?>
-                                </font>
-                            </td>
-                            <td align="center">
-                                <font face="Arial">
-                                    <?php
-                                        if (file_exists("XP.php"))
-                                        {
-                                            echo '<b>XP</b>';
-                                        } else {
-                                            echo 'XP';
-                                        }
-                                    ?>
-                                    /
-                                    <?php
-                                        if (file_exists("XPL.php"))
-                                        {
-                                            echo '<b>XPL</b>';
-                                        } else {
-                                            echo 'XPL';
-                                        }
-                                    ?>
-                                </font>
-                            </td>
-                            <td align="center">
-                                <font face="Arial">
-                                    <?php
-                                        if (file_exists("SM.php"))
-                                        {
-                                            echo '<b>SM</b>';
-                                        } else {
-                                            echo 'SM';
-                                        }
-                                    ?>
-                                    /
-                                    <?php
-                                        if (file_exists("SML.php"))
-                                        {
-                                            echo '<b>SML</b>';
-                                        } else {
-                                            echo 'SML';
-                                        }
-                                    ?>
-                                </font>
-                            </td>
-                            <td align="center">
-                                <font face="Arial">
-                                    <?php
-                                        if (file_exists("AM.php"))
-                                        {
-                                            echo '<b>AM</b>';
-                                        } else {
-                                            echo 'AM';
-                                        }
-                                    ?>
-                                    /
-                                    <?php
-                                        if (file_exists("AML.php"))
-                                        {
-                                            echo '<b>AML</b>';
-                                        } else {
-                                            echo 'AML';
-                                        }
-                                    ?>
+                                    <?php echo fileexists("PaxIndexOverall.html", "PAX Overall") ?>
                                 </font>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+            </span>
+        </div>
+
+        <br />
+
+        <!-- Run/Work -->
+        <div align="center">
+            <span class="style1">
+                <?php include 'runOrder.php' ?>
+            </span>
+        </div>
+
+        <br />
+
+        <!-- Footer -->
+        <div align="center">
+            <span class="style1">
+                <font face="Arial" size="-2">Copyright © Pronto Timing System 2007-2020 All Rights Reserved.</font>
             </span>
         </div>
     </body>
