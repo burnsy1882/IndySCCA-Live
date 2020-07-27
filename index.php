@@ -115,6 +115,43 @@
 
         <br />
 
+        <!-- RAW -->
+        <div align="center">
+            <span class="style1">
+                <table style="width:90%" id="tbl01" class="w3-table w3-striped w3-border w3-bordered w3-centered">
+                    <tbody>
+                        <tr class="w3-black" valign="bottom">
+                            <th align="center" colspan="3">
+                                <font face="Arial">
+                                    <b>RAW</b>
+                                </font>
+                            </th>
+                        </tr>
+
+                        <tr valign="bottom">
+                            <td align="center">
+                                <font face="Arial">
+                                    <?php echo fileexists("RawDay1.html", "RAW Day 1") ?>
+                                </font>
+                            </td>
+                            <td align="center">
+                                <font face="Arial">
+                                    <?php echo fileexists("RawDay2.html", "RAW Day 2") ?>
+                                </font>
+                            </td>
+                            <td align="center">
+                                <font face="Arial">
+                                    <?php echo fileexists("RawOverall.html", "RAW Overall") ?>
+                                </font>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </span>
+        </div>
+
+        <br />
+
         <!-- Run/Work -->
         <div align="center">
             <span class="style1">
@@ -127,7 +164,7 @@
         <!-- Footer -->
         <div align="center">
             <span class="style1">
-                <font face="Arial" size="-2">Copyright © Pronto Timing System 2007-2020 All Rights Reserved.</font>
+                <font face="Arial" size="-2">Copyright &copy; Pronto Timing System 2007-2020 All Rights Reserved.</font>
             </span>
         </div>
     </body>

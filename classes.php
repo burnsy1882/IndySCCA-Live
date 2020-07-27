@@ -31,6 +31,11 @@
                     <b>MODIFIED</b>
                 </font>
             </td>
+            <td>
+                <font face="Arial" size="+1">
+                    <b>PRO</b>
+                </font>
+            </td>
         </tr>
 
         <tr valign="bottom">
@@ -85,6 +90,13 @@
                         echo classexists("AM");
                         print " / ";
                         echo classexists("AML");
+                    ?>
+                </font>
+            </td>
+            <td align="center">
+                <font face="Arial">
+                    <?php
+                        echo classexists("X");
                     ?>
                 </font>
             </td>
@@ -145,6 +157,9 @@
                     ?>
                 </font>
             </td>
+            <td align="center">
+                &nbsp;
+            </td>
         </tr>
 
         <tr>
@@ -201,6 +216,9 @@
                         echo classexists("CML");
                     ?>
                 </font>
+            </td>
+            <td align="center">
+                &nbsp;
             </td>
         </tr>
 
@@ -259,6 +277,9 @@
                     ?>
                 </font>
             </td>
+            <td align="center">
+                &nbsp;
+            </td>
         </tr>
 
         <tr>
@@ -310,6 +331,9 @@
                     ?>
                 </font>
             </td>
+            <td align="center">
+                &nbsp;
+            </td>
         </tr>
 
         <tr>
@@ -349,6 +373,9 @@
                     ?>
                 </font>
             </td>
+            <td align="center">
+                &nbsp;
+            </td>
         </tr>
 
         <tr>
@@ -384,6 +411,8 @@
                 <font face="Arial">
                     <?php
                         echo classexists("CAMC");
+                        print " / ";
+                        echo classexists("CAMCL");
                     ?>
                 </font>
             </td>
@@ -395,6 +424,9 @@
                         echo classexists("KML");
                     ?>
                 </font>
+            </td>
+            <td align="center">
+                &nbsp;
             </td>
         </tr>
 
@@ -431,6 +463,8 @@
                 <font face="Arial">
                     <?php
                         echo classexists("CAMT");
+                        print " / ";
+                        echo classexists("CAMTL");
                     ?>
                 </font>
             </td>
@@ -442,6 +476,9 @@
                         echo classexists("JB");
                     ?>
                 </font>
+            </td>
+            <td align="center">
+                &nbsp;
             </td>
         </tr>
 
@@ -478,6 +515,8 @@
                 <font face="Arial">
                     <?php
                         echo classexists("CAMS");
+                        print " / ";
+                        echo classexists("CAMSL");
                     ?>
                 </font>
             </td>
@@ -489,6 +528,9 @@
                         echo classexists("FSAEL");
                     ?>
                 </font>
+            </td>
+            <td align="center">
+                &nbsp;
             </td>
         </tr>
     </tbody>
