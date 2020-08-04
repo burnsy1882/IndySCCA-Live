@@ -42,61 +42,62 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("SS");
+                        //echo fileexists("classes/SS");
+                        echo fileexists("classes/SS.php", "SS");
                         print " / ";
-                        echo classexists("SSL");
+                        echo fileexists("classes/SSL.php", "SSL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("STH");
+                        echo fileexists("classes/STH.php", "STH");
                         print " / ";
-                        echo classexists("STHL");
+                        echo fileexists("classes/STHL.php", "STHL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("SSP");
+                        echo fileexists("classes/SSP.php", "SSP");
                         print " / ";
-                        echo classexists("SSPL");
+                        echo fileexists("classes/SSPL.php", "SSPL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("XP");
+                        echo fileexists("classes/XP.php", "XP");
                         print " / ";
-                        echo classexists("XPL");
+                        echo fileexists("classes/XPL.php", "XPL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("SM");
+                        echo fileexists("classes/SM.php", "SM");
                         print " / ";
-                        echo classexists("SML");
+                        echo fileexists("classes/SML.php", "SML");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("AM");
+                        echo fileexists("classes/AM.php", "AM");
                         print " / ";
-                        echo classexists("AML");
+                        echo fileexists("classes/AML.php", "AML");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("X");
+                        echo fileexists("classes/X.php", "X");
                     ?>
                 </font>
             </td>
@@ -106,54 +107,54 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("AS");
+                        echo fileexists("classes/AS.php", "AS");
                         print " / ";
-                        echo classexists("ASL");
+                        echo fileexists("classes/ASL.php", "ASL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("STS");
+                        echo fileexists("classes/STS.php", "STS");
                         print " / ";
-                        echo classexists("STSL");
+                        echo fileexists("classes/STSL.php", "STSL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("ASP");
+                        echo fileexists("classes/ASP.php", "ASP");
                         print " / ";
-                        echo classexists("ASPL");
+                        echo fileexists("classes/ASPL.php", "ASPL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("CP");
+                        echo fileexists("classes/CP.php", "CP");
                         print " / ";
-                        echo classexists("CPL");
+                        echo fileexists("classes/CPL.php", "CPL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("SSM");
+                        echo fileexists("classes/SSM.php", "SSM");
                         print " / ";
-                        echo classexists("SSML");
+                        echo fileexists("classes/SSML.php", "SSML");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("BM");
+                        echo fileexists("classes/BM.php", "BM");
                         print " / ";
-                        echo classexists("BML");
+                        echo fileexists("classes/BML.php", "BML");
                     ?>
                 </font>
             </td>
@@ -166,114 +167,54 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("BS");
+                        echo fileexists("classes/BS.php", "BS");
                         print " / ";
-                        echo classexists("BSL");
+                        echo fileexists("classes/BSL.php", "BSL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("STX");
+                        echo fileexists("classes/STX.php", "STX");
                         print " / ";
-                        echo classexists("STXL");
+                        echo fileexists("classes/STXL.php", "STXL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("BSP");
+                        echo fileexists("classes/BSP.php", "BSP");
                         print " / ";
-                        echo classexists("BSPL");
+                        echo fileexists("classes/BSPL.php", "BSPL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("DP");
+                        echo fileexists("classes/DP.php", "DP");
                         print " / ";
-                        echo classexists("DPL");
+                        echo fileexists("classes/DPL.php", "DPL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("SMF");
+                        echo fileexists("classes/SMF.php", "SMF");
                         print " / ";
-                        echo classexists("SMFL");
+                        echo fileexists("classes/SMFL.php", "SMFL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("CM");
+                        echo fileexists("classes/CM.php", "CM");
                         print " / ";
-                        echo classexists("CML");
-                    ?>
-                </font>
-            </td>
-            <td align="center">
-                &nbsp;
-            </td>
-        </tr>
-
-        <tr>
-            <td align="center">
-                <font face="Arial">
-                    <?php
-                        echo classexists("CS");
-                        print " / ";
-                        echo classexists("CSL");
-                    ?>
-                </font>
-            </td>
-            <td align="center">
-                <font face="Arial">
-                    <?php
-                        echo classexists("STU");
-                        print " / ";
-                        echo classexists("STUL");
-                    ?>
-                </font>
-            </td>
-            <td align="center">
-                <font face="Arial">
-                    <?php
-                        echo classexists("CSP");
-                        print " / ";
-                        echo classexists("CSPL");
-                    ?>
-                </font>
-            </td>
-            <td align="center">
-                <font face="Arial">
-                    <?php
-                        echo classexists("EP");
-                        print " / ";
-                        echo classexists("EPL");
-                    ?>
-                </font>
-            </td>
-            <td align="center">
-                <font face="Arial">
-                    <?php
-                        echo classexists("SMS");
-                        print " / ";
-                        echo classexists("SMSL");
-                    ?>
-                </font>
-            </td>
-            <td align="center">
-                <font face="Arial">
-                    <?php
-                        echo classexists("DM");
-                        print " / ";
-                        echo classexists("DML");
+                        echo fileexists("classes/CML.php", "CML");
                     ?>
                 </font>
             </td>
@@ -286,48 +227,54 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("DS");
+                        echo fileexists("classes/CS.php", "CS");
                         print " / ";
-                        echo classexists("DSL");
+                        echo fileexists("classes/CSL.php", "CSL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("STR");
+                        echo fileexists("classes/STU.php", "STU");
                         print " / ";
-                        echo classexists("STRL");
+                        echo fileexists("classes/STUL.php", "STUL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("DSP");
+                        echo fileexists("classes/CSP.php", "CSP");
                         print " / ";
-                        echo classexists("DSPL");
+                        echo fileexists("classes/CSPL.php", "CSPL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("FP");
+                        echo fileexists("classes/EP.php", "EP");
                         print " / ";
-                        echo classexists("FPL");
+                        echo fileexists("classes/EPL.php", "EPL");
                     ?>
                 </font>
             </td>
             <td align="center">
-                &nbsp;
+                <font face="Arial">
+                    <?php
+                        echo fileexists("classes/SMS.php", "SMS");
+                        print " / ";
+                        echo fileexists("classes/SMSL.php", "SMSL");
+                    ?>
+                </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("EM");
+                        echo fileexists("classes/DM.php", "DM");
                         print " / ";
-                        echo classexists("EML");
+                        echo fileexists("classes/DML.php", "DML");
                     ?>
                 </font>
             </td>
@@ -340,9 +287,63 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("ES");
+                        echo fileexists("classes/DS.php", "DS");
                         print " / ";
-                        echo classexists("ESL");
+                        echo fileexists("classes/DSL.php", "DSL");
+                    ?>
+                </font>
+            </td>
+            <td align="center">
+                <font face="Arial">
+                    <?php
+                        echo fileexists("classes/STR.php", "STR");
+                        print " / ";
+                        echo fileexists("classes/STRL.php", "STRL");
+                    ?>
+                </font>
+            </td>
+            <td align="center">
+                <font face="Arial">
+                    <?php
+                        echo fileexists("classes/DSP.php", "DSP");
+                        print " / ";
+                        echo fileexists("classes/DSPL.php", "DSPL");
+                    ?>
+                </font>
+            </td>
+            <td align="center">
+                <font face="Arial">
+                    <?php
+                        echo fileexists("classes/FP.php", "FP");
+                        print " / ";
+                        echo fileexists("classes/FPL.php", "FPL");
+                    ?>
+                </font>
+            </td>
+            <td align="center">
+                &nbsp;
+            </td>
+            <td align="center">
+                <font face="Arial">
+                    <?php
+                        echo fileexists("classes/EM.php", "EM");
+                        print " / ";
+                        echo fileexists("classes/EML.php", "EML");
+                    ?>
+                </font>
+            </td>
+            <td align="center">
+                &nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center">
+                <font face="Arial">
+                    <?php
+                        echo fileexists("classes/ES.php", "ES");
+                        print " / ";
+                        echo fileexists("classes/ESL.php", "ESL");
                     ?>
                 </font>
             </td>
@@ -352,9 +353,9 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("ESP");
+                        echo fileexists("classes/ESP.php", "ESP");
                         print " / ";
-                        echo classexists("ESPL");
+                        echo fileexists("classes/ESPL.php", "ESPL");
                     ?>
                 </font>
             </td>
@@ -367,9 +368,9 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("FM");
+                        echo fileexists("classes/FM.php", "FM");
                         print " / ";
-                        echo classexists("FML");
+                        echo fileexists("classes/FML.php", "FML");
                     ?>
                 </font>
             </td>
@@ -382,9 +383,9 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("FS");
+                        echo fileexists("classes/FS.php", "FS");
                         print " / ";
-                        echo classexists("FSL");
+                        echo fileexists("classes/FSL.php", "FSL");
                     ?>
                 </font>
             </td>
@@ -394,34 +395,34 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("FSP");
+                        echo fileexists("classes/FSP.php", "FSP");
                         print " / ";
-                        echo classexists("FSPL");
+                        echo fileexists("classes/FSPL.php", "FSPL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("XSA");
+                        echo fileexists("classes/XSA.php", "XSA");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("CAMC");
+                        echo fileexists("classes/CAMC.php", "CAMC");
                         print " / ";
-                        echo classexists("CAMCL");
+                        echo fileexists("classes/CAMCL.php", "CAMCL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("KM");
+                        echo fileexists("classes/KM.php", "KM");
                         print " / ";
-                        echo classexists("KML");
+                        echo fileexists("classes/KML.php", "KML");
                     ?>
                 </font>
             </td>
@@ -434,18 +435,18 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("GS");
+                        echo fileexists("classes/GS.php", "GS");
                         print " / ";
-                        echo classexists("GSL");
+                        echo fileexists("classes/GSL.php", "GSL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("SSC");
+                        echo fileexists("classes/SSC.php", "SSC");
                         print " / ";
-                        echo classexists("SSCL");
+                        echo fileexists("classes/SSCL.php", "SSCL");
                     ?>
                 </font>
             </td>
@@ -455,25 +456,25 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("XSB");
+                        echo fileexists("classes/XSB.php", "XSB");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("CAMT");
+                        echo fileexists("classes/CAMT.php", "CAMT");
                         print " / ";
-                        echo classexists("CAMTL");
+                        echo fileexists("classes/CAMTL.php", "CAMTL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("JA");
+                        echo fileexists("classes/JA.php", "JA");
                         print " / ";
-                        echo classexists("JB");
+                        echo fileexists("classes/JB.php", "JB");
                     ?>
                 </font>
             </td>
@@ -486,18 +487,18 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("HS");
+                        echo fileexists("classes/HS.php", "HS");
                         print " / ";
-                        echo classexists("HSL");
+                        echo fileexists("classes/HSL.php", "HSL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("SSR");
+                        echo fileexists("classes/SSR.php", "SSR");
                         print " / ";
-                        echo classexists("SSRL");
+                        echo fileexists("classes/SSRL.php", "SSRL");
                     ?>
                 </font>
             </td>
@@ -507,25 +508,25 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("EVX");
+                        echo fileexists("classes/EVX.php", "EVX");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("CAMS");
+                        echo fileexists("classes/CAMS.php", "CAMS");
                         print " / ";
-                        echo classexists("CAMSL");
+                        echo fileexists("classes/CAMSL.php", "CAMSL");
                     ?>
                 </font>
             </td>
             <td align="center">
                 <font face="Arial">
                     <?php
-                        echo classexists("FSAE");
+                        echo fileexists("classes/FSAE.php", "FSAE");
                         print " / ";
-                        echo classexists("FSAEL");
+                        echo fileexists("classes/FSAEL.php", "FSAEL");
                     ?>
                 </font>
             </td>

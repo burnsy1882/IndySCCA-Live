@@ -16,11 +16,6 @@
                 <tbody>
                     <tr>
                         <td>
-                            <img src="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
                             <span class="style1">
                                 <b>
                                     <big>Pronto Timing System Live Timing</big>
@@ -32,7 +27,37 @@
                     <tr>
                         <td>
                             <span class="style1">
-                                <?php include 'eventName.html' ?>
+                                <?php include 'misc/eventName.html' ?>
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="style1">
+                                Event Sponsored By:
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <a href="http://indyscca.org"><img src="http://indyscca.org/information/logosGraphicsDistribution/indysccaLogo2020.gif" height="200"></a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="style1">
+                                <?php echo fileexists("Event_Supps.pdf", "Event Supps and Schedule", false)?>
+                            </span>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="style1">
+                                <b>Local Site FM Channel: </b>
                             </span>
                         </td>
                     </tr>
@@ -42,28 +67,10 @@
 
         <br />
 
-        <!-- Event Supps -->
-        <div align="center">
-            <span class="style1">
-                <?php echo fileexists("Event_Supps.pdf", "Event Supps and Schedule", false)?>
-            </span>
-        </div>
-
-        <br />
-
-        <!-- FM Channel -->
-        <div align="center">
-            <span class="style1">
-                <b>Local Site FM Channel: </b>
-            </span>
-        </div>
-
-        <br />
-
         <!-- Run Ticker -->
         <div align="center">
             <span class="style1">
-                <?php include 'RunTickerTable.php' ?>
+                <?php include 'misc/RunTickerTable.php' ?>
             </span>
         </div>
 
@@ -94,17 +101,17 @@
                         <tr valign="bottom">
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("PaxIndexDay1.html", "PAX Day 1") ?>
+                                    <?php echo fileexists("misc/PaxIndexDay1.html", "PAX Day 1") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("PaxIndexDay2.html", "PAX Day 2") ?>
+                                    <?php echo fileexists("misc/PaxIndexDay2.html", "PAX Day 2") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("PaxIndexOverall.html", "PAX Overall") ?>
+                                    <?php echo fileexists("misc/PaxIndexOverall.html", "PAX Overall") ?>
                                 </font>
                             </td>
                         </tr>
@@ -131,17 +138,17 @@
                         <tr valign="bottom">
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("RawDay1.html", "RAW Day 1") ?>
+                                    <?php echo fileexists("misc/RawDay1.html", "RAW Day 1") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("RawDay2.html", "RAW Day 2") ?>
+                                    <?php echo fileexists("misc/RawDay2.html", "RAW Day 2") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("RawOverall.html", "RAW Overall") ?>
+                                    <?php echo fileexists("misc/RawOverall.html", "RAW Overall") ?>
                                 </font>
                             </td>
                         </tr>
@@ -155,7 +162,7 @@
         <!-- Run/Work -->
         <div align="center">
             <span class="style1">
-                <?php include 'runOrder.php' ?>
+                <?php include 'misc/runOrder.php' ?>
             </span>
         </div>
 
