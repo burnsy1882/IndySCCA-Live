@@ -1,2 +1,2 @@
-# IndySCCA Live
-
+# IndySCCA-Live
+IndySCCA.org Live Timing
