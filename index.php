@@ -92,7 +92,7 @@
         <!-- List of classes -->
         <div align="center">
             <span class="style1">
-                <?php include 'classes.vtable.php' ?>
+                <?php include 'classes.php' ?>
             </span>
         </div>
 

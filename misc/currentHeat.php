@@ -1,1 +1,0 @@
-- Current Heat 0
