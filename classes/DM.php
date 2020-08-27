@@ -9,20 +9,20 @@
 background-color:#ECECEC;
 }
 </style>
-<link rel='stylesheet' href='./w3.css'>
-<link rel='stylesheet' href='./rs.css'>
-<link href='./BlackOpsOne.css' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' href='http://indyscca.org/live/w3.css'>
+<link rel='stylesheet' href='http://indyscca.org/live/rs.css'>
+<link rel='stylesheet' href='http://indyscca.org/live/BlackOpsOne.css'>
 </head>
 <body>
 <Table align='center' style='width:65%' id='tblHeader' class='w3-table w3-centered'>
-<TR><TD><b>Indianapolis Region 2020 Points Event 2</b></TD></TR>
-<TR><TD><b>28 June 2020</b></TD></TR>
+<TR><TD><b>Indiana Region SCCA 2020 Test and Tune 1</b></TD></TR>
+<TR><TD><b>08/22/2020</b></TD></TR>
 <TR><TD><b>&nbsp;</b></TD></TR>
 <TR><TD><b>**** UNOFFICIAL RESULTS (INFORMATIONAL ONLY) ****</b></TD></TR>
 <TR><TD><b>&nbsp;</b></TD></TR>
 <TR><TD><img src='http://www.prontotimingsystem.com/ProntoLogo.jpg' width='183' height='92'></img></TD></TR><TR><TD><b><A HREF='http://www.prontotimingsystem.com'>www.ProntoTimingSystem.com</A></TD></TR>
 <TR><TD><b>&nbsp;</b></TD></TR>
-<TR><TD><b>Class standings for DM [2 Cars] (04:27:01 PM)</b>
+<TR><TD><b>Class standings for DM [1 Cars] (01:17:13 PM)</b>
 </Table>
 &nbsp;<br><br>
 <Table align='center' style='width:65%' id='tbl01' class='w3-table w3-border w3-bordered w3-centered'>
@@ -32,68 +32,34 @@ background-color:#ECECEC;
 <TD><b>Car #</b></font></TD>
 <TD colspan=2><b>Name</b></font></TD>
 <TD colspan=2><b>Car</b></font></TD>
-<TD><b>&nbsp;</b></TD>
 <TD><b>Time</b></font></TD>
 </TR>
 <TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>T</TD>
 <TD><b> 1</b></TD>
-<TD><b>77</b></TD>
-<TD colspan=2><b>Stephen Brinkerhoff</b></TD>
-<TD colspan=2><b> 2006 Ultralite XR7 </b></TD>
-<TD>Hoosier    </TD>
-<TD><b>&nbsp;</b></TD>
-</TR>
-<TR Class='w3-white' VALIGN="center" ALIGN="center">
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>DNF</TD>
-<TD>48.028</TD>
-<TD>48.570</TD>
-<TD><b>46.314</b></TD>
-<TD>&nbsp;</TD>
-<TD><b>No Time</b></TD>
-</TR>
-<TR Class='w3-white' VALIGN="center" ALIGN="center">
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>46.599</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp</TD>
-<TR Class='ProntoLightGray' VALIGN="center" ALIGN="center">
-<TD>&nbsp;</TD>
-<TD><b> 2</b></TD>
-<TD><b>159</b></TD>
-<TD colspan=2><b>Mark Manninen</b></TD>
-<TD colspan=2><b> 2018 Spectre Super S </b></TD>
+<TD><b>22</b></TD>
+<TD colspan=2><b>John Hancock</b></TD>
+<TD colspan=2><b>1978 Spitfire </b></TD>
 <TD>          </TD>
-<TD><b>&nbsp;</b></TD>
 </TR>
-<TR Class='ProntoLightGray' VALIGN="center" ALIGN="center">
+<TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>51.905</TD>
-<TD>51.497</TD>
-<TD>49.420</TD>
-<TD><b>48.795</b></TD>
+<TD>43.515</TD>
+<TD>43.004</TD>
+<TD>48.206</TD>
 <TD>&nbsp;</TD>
-<TD><b>No Time</b></TD>
+<TD><b>42.610</b></TD>
 </TR>
-<TR Class='ProntoLightGray' VALIGN="center" ALIGN="center">
+<TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>50.463(1)</TD>
+<TD><b>42.610</b></TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp</TD>
 </Table>
 

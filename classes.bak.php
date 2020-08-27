@@ -42,7 +42,6 @@
             <td align="center">
                 <font face="Arial">
                     <?php
-                        //echo fileexists("classes/SS");
                         echo fileexists("classes/SS.php", "SS");
                         print " / ";
                         echo fileexists("classes/SSL.php", "SSL");

@@ -22,7 +22,7 @@ background-color:#ECECEC;
 <TR><TD><b>&nbsp;</b></TD></TR>
 <TR><TD><img src='http://www.prontotimingsystem.com/ProntoLogo.jpg' width='183' height='92'></img></TD></TR><TR><TD><b><A HREF='http://www.prontotimingsystem.com'>www.ProntoTimingSystem.com</A></TD></TR>
 <TR><TD><b>&nbsp;</b></TD></TR>
-<TR><TD><b>Class standings for CSP [1 Cars] (02:06:48 PM)</b>
+<TR><TD><b>Class standings for SSP [2 Cars] (01:36:54 PM)</b>
 </Table>
 &nbsp;<br><br>
 <Table align='center' style='width:65%' id='tbl01' class='w3-table w3-border w3-bordered w3-centered'>
@@ -37,29 +37,76 @@ background-color:#ECECEC;
 <TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>T</TD>
 <TD><b> 1</b></TD>
-<TD><b>20</b></TD>
-<TD colspan=2><b>Kevin Burns</b></TD>
-<TD colspan=2><b> 2000 Mazda Miata </b></TD>
-<TD>Bridgestone</TD>
+<TD><b>14</b></TD>
+<TD colspan=2><b>Steve Biser</b></TD>
+<TD colspan=2><b> 2013 Chevrolet Camar </b></TD>
+<TD>Hoosier    </TD>
 </TR>
 <TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>43.458</TD>
-<TD>44.000</TD>
-<TD>43.808</TD>
+<TD>55.605</TD>
+<TD>47.720</TD>
+<TD>66.053</TD>
 <TD>&nbsp;</TD>
-<TD><b>43.143</b></TD>
+<TD><b>42.944</b></TD>
 </TR>
 <TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD><b>43.143</b></TD>
+<TD>52.882</TD>
+<TD>49.098</TD>
+<TD>43.291</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR Class='w3-white' VALIGN="center" ALIGN="center">
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>43.466</TD>
+<TD>43.510</TD>
+<TD>43.553</TD>
+<TD><b>&nbsp;</b></TD>
+<TD><b>&nbsp;</b></TD>
+</TR>
+<TR Class='w3-white' VALIGN="center" ALIGN="center">
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD><b>42.944</b></TD>
+<TD>47.140</TD>
+<TD><b>&nbsp;</b></TD>
+<TD><b>&nbsp;</b></TD>
+<TD><b>&nbsp;</b></TD>
+<TR Class='ProntoLightGray' VALIGN="center" ALIGN="center">
+<TD>&nbsp;</TD>
+<TD><b> 2</b></TD>
+<TD><b>4</b></TD>
+<TD colspan=2><b>James Biser</b></TD>
+<TD colspan=2><b>2013 Chevrolet Camaro</b></TD>
+<TD>          </TD>
+</TR>
+<TR Class='ProntoLightGray' VALIGN="center" ALIGN="center">
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD><b>No Time</b></TD>
+</TR>
+<TR Class='ProntoLightGray' VALIGN="center" ALIGN="center">
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp</TD>
 </Table>
 

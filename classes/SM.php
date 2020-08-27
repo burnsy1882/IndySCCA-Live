@@ -22,7 +22,7 @@ background-color:#ECECEC;
 <TR><TD><b>&nbsp;</b></TD></TR>
 <TR><TD><img src='http://www.prontotimingsystem.com/ProntoLogo.jpg' width='183' height='92'></img></TD></TR><TR><TD><b><A HREF='http://www.prontotimingsystem.com'>www.ProntoTimingSystem.com</A></TD></TR>
 <TR><TD><b>&nbsp;</b></TD></TR>
-<TR><TD><b>Class standings for CSP [1 Cars] (02:06:48 PM)</b>
+<TR><TD><b>Class standings for SM [3 Cars] (01:36:24 PM)</b>
 </Table>
 &nbsp;<br><br>
 <Table align='center' style='width:65%' id='tbl01' class='w3-table w3-border w3-bordered w3-centered'>
@@ -37,29 +37,93 @@ background-color:#ECECEC;
 <TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>T</TD>
 <TD><b> 1</b></TD>
-<TD><b>20</b></TD>
-<TD colspan=2><b>Kevin Burns</b></TD>
-<TD colspan=2><b> 2000 Mazda Miata </b></TD>
+<TD><b>1</b></TD>
+<TD colspan=2><b>Hilary Anderson Frank</b></TD>
+<TD colspan=2><b> 2014 Audi S4 </b></TD>
+<TD>          </TD>
+</TR>
+<TR Class='w3-white' VALIGN="center" ALIGN="center">
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>44.515</TD>
+<TD>51.202</TD>
+<TD>40.441</TD>
+<TD>&nbsp;</TD>
+<TD><b>38.966</b></TD>
+</TR>
+<TR Class='w3-white' VALIGN="center" ALIGN="center">
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>39.005</TD>
+<TD><b>38.966</b></TD>
+<TD>52.002</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR Class='w3-white' VALIGN="center" ALIGN="center">
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>39.535</TD>
+<TD>40.873</TD>
+<TD><b>&nbsp;</b></TD>
+<TD><b>&nbsp;</b></TD>
+<TD><b>&nbsp;</b></TD>
+<TR Class='ProntoLightGray' VALIGN="center" ALIGN="center">
+<TD>&nbsp;</TD>
+<TD><b> 2</b></TD>
+<TD><b>2</b></TD>
+<TD colspan=2><b>Michael Bunton</b></TD>
+<TD colspan=2><b> 2013 Audi s4 </b></TD>
+<TD>Hoosier    </TD>
+</TR>
+<TR Class='ProntoLightGray' VALIGN="center" ALIGN="center">
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>55.954</TD>
+<TD>49.100</TD>
+<TD>48.359</TD>
+<TD>&nbsp;</TD>
+<TD><b>45.982</b></TD>
+</TR>
+<TR Class='ProntoLightGray' VALIGN="center" ALIGN="center">
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>49.244</TD>
+<TD><b>45.982</b></TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>(7.016)</TD>
+<TR Class='w3-white' VALIGN="center" ALIGN="center">
+<TD>&nbsp;</TD>
+<TD><b> 3</b></TD>
+<TD><b>99</b></TD>
+<TD colspan=2><b>Jay Bullington</b></TD>
+<TD colspan=2><b> 2014 Audi S4 </b></TD>
 <TD>Bridgestone</TD>
 </TR>
 <TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>43.458</TD>
-<TD>44.000</TD>
-<TD>43.808</TD>
 <TD>&nbsp;</TD>
-<TD><b>43.143</b></TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD><b>No Time</b></TD>
 </TR>
 <TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD><b>43.143</b></TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp</TD>
 </Table>
 

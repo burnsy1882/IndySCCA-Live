@@ -22,7 +22,7 @@ background-color:#ECECEC;
 <TR><TD><b>&nbsp;</b></TD></TR>
 <TR><TD><img src='http://www.prontotimingsystem.com/ProntoLogo.jpg' width='183' height='92'></img></TD></TR><TR><TD><b><A HREF='http://www.prontotimingsystem.com'>www.ProntoTimingSystem.com</A></TD></TR>
 <TR><TD><b>&nbsp;</b></TD></TR>
-<TR><TD><b>Class standings for CSP [1 Cars] (02:06:48 PM)</b>
+<TR><TD><b>Class standings for SSL [1 Cars] (11:32:40 AM)</b>
 </Table>
 &nbsp;<br><br>
 <Table align='center' style='width:65%' id='tbl01' class='w3-table w3-border w3-bordered w3-centered'>
@@ -37,26 +37,26 @@ background-color:#ECECEC;
 <TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>T</TD>
 <TD><b> 1</b></TD>
-<TD><b>20</b></TD>
-<TD colspan=2><b>Kevin Burns</b></TD>
-<TD colspan=2><b> 2000 Mazda Miata </b></TD>
-<TD>Bridgestone</TD>
+<TD><b>661</b></TD>
+<TD colspan=2><b>Melissa Frost</b></TD>
+<TD colspan=2><b> 2012 Porsche Cayman  </b></TD>
+<TD>          </TD>
 </TR>
 <TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>43.458</TD>
-<TD>44.000</TD>
-<TD>43.808</TD>
+<TD>54.417</TD>
+<TD><b>48.538</b></TD>
+<TD>50.146</TD>
 <TD>&nbsp;</TD>
-<TD><b>43.143</b></TD>
+<TD><b>48.538</b></TD>
 </TR>
 <TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD><b>43.143</b></TD>
+<TD>49.191</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>

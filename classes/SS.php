@@ -9,20 +9,20 @@
 background-color:#ECECEC;
 }
 </style>
-<link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
-<link rel='stylesheet' href='http://sololive.scca.com/css/rs.css'>
-<link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' href='http://indyscca.org/live/w3.css'>
+<link rel='stylesheet' href='http://indyscca.org/live/rs.css'>
+<link rel='stylesheet' href='http://indyscca.org/live/BlackOpsOne.css'>
 </head>
 <body>
 <Table align='center' style='width:65%' id='tblHeader' class='w3-table w3-centered'>
-<TR><TD><b>Indianapolis Region 2020 Points Event 2</b></TD></TR>
-<TR><TD><b>28 June 2020</b></TD></TR>
+<TR><TD><b>Indiana Region SCCA 2020 Test and Tune 1</b></TD></TR>
+<TR><TD><b>08/22/2020</b></TD></TR>
 <TR><TD><b>&nbsp;</b></TD></TR>
 <TR><TD><b>**** UNOFFICIAL RESULTS (INFORMATIONAL ONLY) ****</b></TD></TR>
 <TR><TD><b>&nbsp;</b></TD></TR>
 <TR><TD><img src='http://www.prontotimingsystem.com/ProntoLogo.jpg' width='183' height='92'></img></TD></TR><TR><TD><b><A HREF='http://www.prontotimingsystem.com'>www.ProntoTimingSystem.com</A></TD></TR>
 <TR><TD><b>&nbsp;</b></TD></TR>
-<TR><TD><b>Class standings for SS [1 Cars] (11:22:35 AM)</b>
+<TR><TD><b>Class standings for SS [1 Cars] (11:12:58 AM)</b>
 </Table>
 &nbsp;<br><br>
 <Table align='center' style='width:65%' id='tbl01' class='w3-table w3-border w3-bordered w3-centered'>
@@ -32,34 +32,30 @@ background-color:#ECECEC;
 <TD><b>Car #</b></font></TD>
 <TD colspan=2><b>Name</b></font></TD>
 <TD colspan=2><b>Car</b></font></TD>
-<TD><b>&nbsp;</b></TD>
 <TD><b>Time</b></font></TD>
 </TR>
 <TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>T</TD>
 <TD><b> 1</b></TD>
-<TD><b>62</b></TD>
-<TD colspan=2><b>Kevin Kirchoff</b></TD>
-<TD colspan=2><b> 2016 Porsche GT4 </b></TD>
-<TD>Bridgestone</TD>
-<TD><b>&nbsp;</b></TD>
+<TD><b>661</b></TD>
+<TD colspan=2><b>Aamir Zakaria</b></TD>
+<TD colspan=2><b> 2012 Porsche Cayman  </b></TD>
+<TD>          </TD>
 </TR>
 <TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>49.109</TD>
-<TD>48.572</TD>
-<TD>47.729</TD>
-<TD><b>47.681</b></TD>
+<TD>46.226</TD>
+<TD><b>45.281</b></TD>
 <TD>&nbsp;</TD>
-<TD><b>47.681</b></TD>
+<TD>&nbsp;</TD>
+<TD><b>45.281</b></TD>
 </TR>
 <TR Class='w3-white' VALIGN="center" ALIGN="center">
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>48.037</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
