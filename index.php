@@ -40,7 +40,7 @@
                     <tr>
                         <td>
                             <span class="style1">
-                                <?php include 'classes/eventName.html' ?>
+                                <?php include 'files/eventName.html' ?>
                             </span>
                         </td>
                     </tr>
@@ -62,7 +62,7 @@
                     <tr>
                         <td>
                             <span class="style1">
-                                <?php echo fileexists("Event_Supps.pdf", "Event Supps and Schedule", false)?>
+                                <?php echo fileexists("files/Event_Supps.pdf", "Event Supps and Schedule", false)?>
                             </span>
                         </td>
                     </tr>
@@ -83,7 +83,7 @@
         <!-- Run Ticker -->
         <div align="center">
             <span class="style1">
-                <?php include 'misc/RunTickerTable.php' ?>
+                <?php include 'files/RunTickerTable.php' ?>
             </span>
         </div>
 
@@ -115,17 +115,17 @@
                         <tr valign="bottom">
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("misc/PaxIndexDay1.html", "PAX Day 1") ?>
+                                    <?php echo fileexists("files/PaxIndexDay1.html", "PAX Day 1") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("misc/PaxIndexDay2.html", "PAX Day 2") ?>
+                                    <?php echo fileexists("files/PaxIndexDay2.html", "PAX Day 2") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("misc/PaxIndexOverall.html", "PAX Overall") ?>
+                                    <?php echo fileexists("files/PaxIndexOverall.html", "PAX Overall") ?>
                                 </font>
                             </td>
                         </tr>
@@ -153,17 +153,17 @@
                         <tr valign="bottom">
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("misc/RawDay1.html", "RAW Day 1") ?>
+                                    <?php echo fileexists("files/RawDay1.html", "RAW Day 1") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("misc/RawDay2.html", "RAW Day 2") ?>
+                                    <?php echo fileexists("files/RawDay2.html", "RAW Day 2") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("misc/RawOverall.html", "RAW Overall") ?>
+                                    <?php echo fileexists("files/RawOverall.html", "RAW Overall") ?>
                                 </font>
                             </td>
                         </tr>
@@ -177,7 +177,7 @@
         <!-- Run/Work -->
         <div align="center">
             <span class="style1">
-                <?php include 'classes/runOrder.php' ?>
+                <?php include 'files/runOrder.php' ?>
             </span>
         </div>
 

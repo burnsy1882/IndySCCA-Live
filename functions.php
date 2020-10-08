@@ -4,9 +4,9 @@
         $strReturn = "";
 
         // Check mens class
-        if (file_exists("classes/".$class.".php"))
+        if (file_exists("files/".$class.".php"))
         {
-            $strReturn .= '<b><a href="classes/'.$class.'.php">'.$class.'</a></b>';
+            $strReturn .= '<b><a href="files/'.$class.'.php">'.$class.'</a></b>';
         }
         else
         {
@@ -16,9 +16,9 @@
         $strReturn .= " / ";
 
         // Check womens class
-        if (file_exists("classes/".$class."L.php"))
+        if (file_exists("files/".$class."L.php"))
         {
-            $strReturn .= '<b><a href="classes/'.$class.'L.php">'.$class.'L</a></b>';
+            $strReturn .= '<b><a href="files/'.$class.'L.php">'.$class.'L</a></b>';
         }
         else
         {

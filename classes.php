@@ -43,7 +43,7 @@
                 <td><?php echo classexists("CAMS"); ?></td>
                 <td><?php echo classexists("HCR"); ?></td>
                 <td><?php echo classexists("XSB"); ?></td>
-                <td>&nbsp;</td>
+                <td><?php echo classexists("ZF"); ?></td>
             </tr>
             <tr style="white-space: nowrap;">
                 <td><?php echo classexists("AS"); ?></td>
