@@ -1,58 +1,54 @@
+<?php
+    global $heats;
+    $heats = 0;
+
+    foreach (glob("./files/Heat[0-9]RunOrder.html") as $file)
+    {
+        $heats++;
+    }
+?>
+
 <table style="width:65%" id="tbl-runOrder" class="w3-table w3-striped w3-border w3-bordered w3-centered">
     <thead>
         <tr class="w3-gray">
             <th align="center">Heat</th>
-            <th align="center">Classes Running:</th>
+            <th align="center" colspan=2>Classes Running:</th>
         </tr>
     </thead>
-    
+
     <tbody>
-        <tr align="left">
-            <td>1</td>
+        <?php
+            for ($i = 1; $i <= $heats; $i++)
+            //foreach ($heats as $heat)
+            {
+                echo "<tr>";
+                echo "<td>$i</td>";
+                $file = file_get_contents("./files/Heat".$i."RunOrder.html");
+                echo "<td>$file</td>";
+                if (is_readable("./files/GridSheets1.html")) {echo '<td><a href="./files/GridSheets1.html">GridSheets</a></td>';} else {echo "<td>&nbsp;</td>";}
+                echo "</tr>";
+            }
+        ?>
+    </tbody>
+
+    <thead>
+        <tr class="w3-gray">
+            <th align="center">Heat</th>
+            <th align="center" colspan=2>Classes Working:</th>
         </tr>
+    </thead>
+
+    <tbody>
+        <?php
+            for ($i = 1; $i <= $heats; $i++)
+            {
+                echo "<tr>";
+                echo "<td>$i</td>";
+                $file = file_get_contents("./files/Heat".$i."WorkOrder.html");
+                echo "<td>$file</td>";
+                echo "<td>&nbsp;</td>";
+                echo "</tr>";
+            }
+        ?>
     </tbody>
 </table>
-
-
-<Table style='width:65%' id='tbl-runOrder' class='w3-table w3-striped w3-border w3-bordered w3-centered'>
-<TR class='w3-gray' ALIGN='center' VALIGN='middle'>
-     <Th align='center'><FONT FACE='Arial'>Heat</FONT></Th>
-     <Th align='center' colspan=2><FONT FACE='Arial'>Classes Running: </FONT></Th>
-</TR>
-
-<TR ALIGN='left' VALIGN='middle'>
-     <TD><FONT FACE='Arial'>1</FONT></TD>
-     <TD><FONT FACE='Arial'><?php include("Heat1RunOrder.html") ?></FONT></TD>
-     <TD><FONT FACE='Arial'><?php if (is_readable("GridSheets1.html")) {echo '<A HREF="GridSheets1.html">GridSheets</A>';} else {echo "&nbsp;";} ?></FONT></TD>
-</TR>
-<TR ALIGN='left' VALIGN='middle'>
-     <TD><FONT FACE='Arial'>2</FONT></TD>
-     <TD><FONT FACE='Arial'><?php include("Heat2RunOrder.html") ?></FONT></TD>
-     <TD><FONT FACE='Arial'><?php if (is_readable("GridSheets2.html")) {echo '<A HREF="GridSheets2.html">GridSheets</A>';} else {echo "&nbsp;";} ?></FONT></TD>
-</TR>
-<TR ALIGN='left' VALIGN='middle'>
-     <TD><FONT FACE='Arial'>3</FONT></TD>
-     <TD><FONT FACE='Arial'><?php include("Heat3RunOrder.html") ?></FONT></TD>
-     <TD><FONT FACE='Arial'><?php if (is_readable("GridSheets3.html")) {echo '<A HREF="GridSheets3.html">GridSheets</A>';} else {echo "&nbsp;";} ?></FONT></TD>
-</TR>
-<TR ALIGN='left' VALIGN='middle'>
-     <TD>&nbsp</TD>
-     <TD>&nbsp</TD>
-</TR>
-<TR class='w3-gray' ALIGN='center' VALIGN='middle'>
-    <Th align='center'><FONT FACE='Arial'>Heat</FONT></Th>
-    <Th align='center' colspan=2><FONT FACE='Arial'>Classes Working: </FONT></Th>
-</TR>
-<TR ALIGN='left' VALIGN='middle'>
-     <TD><FONT FACE='Arial'>1</FONT></TD>
-     <TD><FONT FACE='Arial'><?php include("Heat1WorkOrder.html") ?></FONT></TD>
-     <TD><FONT FACE='Arial'>&nbsp;</FONT></TD>
-</TR><TR ALIGN='left' VALIGN='middle'>
-     <TD><FONT FACE='Arial'>2</FONT></TD>
-     <TD><FONT FACE='Arial'><?php include("Heat2WorkOrder.html") ?></FONT></TD>
-     <TD><FONT FACE='Arial'>&nbsp;</FONT></TD>
-</TR><TR ALIGN='left' VALIGN='middle'>
-     <TD><FONT FACE='Arial'>3</FONT></TD>
-     <TD><FONT FACE='Arial'><?php include("Heat3WorkOrder.html") ?></FONT></TD>
-     <TD><FONT FACE='Arial'>&nbsp;</FONT></TD>
-</TR></Table>
