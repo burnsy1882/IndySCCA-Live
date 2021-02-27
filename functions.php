@@ -1,12 +1,20 @@
 <?php
+    function sponsorexists($sponsor, $sponsorURL)
+    {
+        if (file_exists("files/".$sponsor))
+        {
+            return '<a href="'.$sponsorURL.'"><img src="files/'.$sponsor.'" height="200"></a>';
+        }
+    }
+
     function classexists($class)
     {
         $strReturn = "";
 
         // Check mens class
-        if (file_exists("classes/".$class.".php"))
+        if (file_exists("files/".$class.".php"))
         {
-            $strReturn .= '<b><a href="classes/'.$class.'.php">'.$class.'</a></b>';
+            $strReturn .= '<b><a href="files/'.$class.'.php">'.$class.'</a></b>';
         }
         else
         {
@@ -16,9 +24,9 @@
         $strReturn .= " / ";
 
         // Check womens class
-        if (file_exists("classes/".$class."L.php"))
+        if (file_exists("files/".$class."L.php"))
         {
-            $strReturn .= '<b><a href="classes/'.$class.'L.php">'.$class.'L</a></b>';
+            $strReturn .= '<b><a href="files/'.$class.'L.php">'.$class.'L</a></b>';
         }
         else
         {
@@ -30,7 +38,7 @@
 
     function fileexists($file, $name = "", $show = TRUE)
     {
-        if (file_exists($file))
+        if (file_exists("files/".$file))
         {
             return '<b><a href="'.$file.'">'.$name.'</a></b>';
         }
@@ -39,6 +47,25 @@
             if ($show)
             {
                 return $name;
+            }
+            else
+            {
+                return "&nbsp;";
+            }
+        }
+    }
+
+    function fileexistshtml($file, $show = TRUE, $name = "", $before, $after)
+    {
+        if (file_exists("files/".$file))
+        {
+            return $before.'<b><a href="'.$file.'">'.$name.'</a></b>'.$after;
+        }
+        else
+        {
+            if ($show)
+            {
+                return $before.$name.$after;
             }
             else
             {
