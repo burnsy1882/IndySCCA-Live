@@ -25,7 +25,7 @@
                 echo "<td>$i</td>";
                 $file = file_get_contents("./files/Heat".$i."RunOrder.html");
                 echo "<td>$file</td>";
-                if (is_readable("./files/GridSheets1.html")) {echo '<td><a href="./files/GridSheets1.html">GridSheets</a></td>';} else {echo "<td>&nbsp;</td>";}
+                if (is_readable("./files/GridSheets".$i.".html")) {echo '<td><a href="./files/GridSheets'.$i.'.html">GridSheets</a></td>';} else {echo "<td>&nbsp;</td>";}
                 echo "</tr>";
             }
         ?>
