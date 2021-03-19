@@ -31,8 +31,7 @@ from PyInquirer import prompt
 # CONSTANTS
 #===============================================================================
 
-#TSLIVEDIR = "C:\\ProntoTimingSystem\\web"
-TSLIVEDIR = "."
+TSLIVEDIR = "C:\\ProntoTimingSystem\\web"
 HEATS = {}
 CLASSES = {}
 REGEX_HEATS = "(Heat[0-9])RunOrder.html"
@@ -58,22 +57,22 @@ def clear():
     else:
         _ = os.system('clear')
 
-def compileHeats():
+def compile_heats():
     """ Compile a list of heats
     """
 
-    regexHeats = re.compile(REGEX_HEATS)
+    regex = re.compile(REGEX_HEATS)
 
     for root, directories, files in os.walk(TSLIVEDIR, topdown=False):
         for name in files:
-            result = regexHeats.search(name)
+            result = regex.search(name)
             if result is not None:
                 HEATS[result.group(1)] = os.path.join(root, name)
 
     HEATS['Exit'] = "Exit"
 
-def compileClasses(heat):
-    """
+def compile_classes(heat):
+    """ Compile a list of classes for provided heat
     """
 
     with open(heat) as csvfile:
@@ -84,11 +83,11 @@ def compileClasses(heat):
                 CLASSES[column] = []
 
     for i in CLASSES:
-        regexClass = re.compile(i)
+        regex = re.compile(i)
 
         for root, directories, files in os.walk(TSLIVEDIR, topdown=False):
             for name in files:
-                result = regexClass.search(name)
+                result = regex.search(name)
                 if result is not None:
                     CLASSES[i] = os.path.join(root, name)
 
@@ -110,7 +109,7 @@ def replace(category):
     return div
 
 clear()
-compileHeats()
+compile_heats()
 
 pp = pprint.PrettyPrinter(indent=4)
 
@@ -141,15 +140,15 @@ questionCategory = [
 while True:
     print("")
     answersHeats = prompt(questionHeats)
-#     answersHeats = {'Heat': 'Heat1'}
+    #answersHeats = {'Heat': 'Heat1'}
 
     if (answersHeats == {}) or (answersHeats['Heat'] == 'Exit'):
         break
     else:
-#         answersCategory = {'Category': 'Final'}
+        #answersCategory = {'Category': 'Final'}
         answersCategory = prompt(questionCategory)
 
-        compileClasses(HEATS[answersHeats['Heat']])
+        compile_classes(HEATS[answersHeats['Heat']])
 
         for CLASS, FILE in CLASSES.items():
 
