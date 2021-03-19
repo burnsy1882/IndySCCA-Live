@@ -26,6 +26,7 @@ import sys
 import re
 import pprint
 
+from bs4 import BeautifulSoup
 from PyInquirer import prompt
 
 #===============================================================================
@@ -34,8 +35,13 @@ from PyInquirer import prompt
 
 TSLIVEDIR = "C:\\ProntoTimingSystem\\web"
 HEATS = {}
-CLASSES = []
+CLASSES = {}
 reHeats = "(Heat[0-9])RunOrder.html"
+
+reUnofficial = "\*\*\*\* UNOFFICIAL RESULTS \(INFORMATIONAL ONLY\) \*\*\*\*"
+reUnaudited = '<div class="UN-AUDITED">UN-AUDITED RESULTS</div>'
+reProvisional = '<div class="PROVISIONAL">PROVISIONAL RESULTS</div>'
+reFinal = '<div class="FINAL">FINAL RESULTS</div>'
 
 #===============================================================================
 # DO NOT ALTER BELOW
@@ -61,8 +67,6 @@ for root, directories, files in os.walk(TSLIVEDIR, topdown=False):
             result = p.search(name)
             HEATS[result.group(1)] = os.path.join(root, name)
 
-# pp.pprint(HEATS)
-#
 questions = [
     {
         'type': 'list',
@@ -83,26 +87,59 @@ questions = [
     }
 ]
 
-answers = prompt(questions)
+#answers = prompt(questions)
+answers = {'Category': 'Provisional', 'Heat': 'Heat1'}
 pp.pprint(answers)
 
 #= TODO:
 #       Import csv from HeatXRunOrder.html file chosen
 #       Alter each class php file from csv for audit category
 
-# with open(HEATS[answers['Heat']], encoding='utf-8') as csvfile:
-# #     CLASSES = csv.reader(csvfile, delimiter=',')
-#     reader = csv.reader(csvfile)
-#     CLASSES = list(reader)
-
 with open(HEATS[answers['Heat']]) as csvfile:
     reader = csv.reader(csvfile, skipinitialspace=True, delimiter=',')
     for row in reader:
         for column in row:
-#             print(column)
-            CLASSES.append(column)
+            CLASSES[column] = []
+
+for i in CLASSES:
+    p = re.compile(i)
+
+    for root, directories, files in os.walk(TSLIVEDIR, topdown=False):
+        for name in files:
+            if p.search(name) is not None:
+                result = p.search(name)
+                CLASSES[i] = os.path.join(root, name)
 
 pp.pprint(CLASSES)
 
-# for i in CLASSES:
-#     print(i)
+for key, value in CLASSES.items():
+
+    with open(value) as fp:
+        soup = BeautifulSoup(fp, 'html.parser')
+
+    pattern = re.compile(reUnofficial)
+
+    for elem in soup(text=pattern):
+        pp.pprint(elem.parent)
+        elem.parent.clear()
+#         new = soup.new_tag("div", class="UN-AUDITED")
+#         elem.parent.append(new)
+#         elem.parent.append(reUnaudited)
+
+    f = open(value, "w")
+    f.write(str(soup))
+    f.close()
+#
+#
+#
+#
+#
+#
+#
+#
+#
+# for root, directories, files in os.walk(TSLIVEDIR, topdown=False):
+#     for name in files:
+#         if p.search(name) is not None:
+#             result = p.search(name)
+#             HEATS[result.group(1)] = os.path.join(root, name)
