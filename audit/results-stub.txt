@@ -1,5 +1,0 @@
-<TR><TD><b>**** UNOFFICIAL RESULTS (INFORMATIONAL ONLY) ****</b></TD></TR>
-
-<div class="UN-AUDITED">UN-AUDITED RESULTS</div>
-<div class="PROVISIONAL">PROVISIONAL RESULTS</div>
-<div class="FINAL">FINAL RESULTS</div>
