@@ -1,4 +1,12 @@
 <?php
+    function sponsorexists($sponsor, $sponsorURL)
+    {
+        if (file_exists("files/".$sponsor))
+        {
+            return '<a href="'.$sponsorURL.'"><img src="files/'.$sponsor.'" height="200"></a>';
+        }
+    }
+
     function classexists($class)
     {
         $strReturn = "";
@@ -30,7 +38,7 @@
 
     function fileexists($file, $name = "", $show = TRUE)
     {
-        if (file_exists($file))
+        if (file_exists("files/".$file))
         {
             return '<b><a href="'.$file.'">'.$name.'</a></b>';
         }
@@ -39,6 +47,25 @@
             if ($show)
             {
                 return $name;
+            }
+            else
+            {
+                return "&nbsp;";
+            }
+        }
+    }
+
+    function fileexistshtml($file, $show = TRUE, $name = "", $before, $after)
+    {
+        if (file_exists("files/".$file))
+        {
+            return $before.'<b><a href="'.$file.'">'.$name.'</a></b>'.$after;
+        }
+        else
+        {
+            if ($show)
+            {
+                return $before.$name.$after;
             }
             else
             {
