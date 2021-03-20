@@ -34,7 +34,10 @@ from PyInquirer import prompt
 TSLIVEDIR = "C:\\ProntoTimingSystem\\web"
 HEATS = {}
 CLASSES = {}
+
 REGEX_HEATS = "(Heat[0-9])RunOrder.html"
+REGEX_PAX = "(PaxIndexDay[0-9]).html"
+REGEX_RAW = "(RawDay[0-9]).html"
 
 TEXT_UNOFFICIAL = "**** UNOFFICIAL RESULTS (INFORMATIONAL ONLY) ****"
 DIV_UNAUDITED = 'UN-AUDITED'
@@ -61,13 +64,21 @@ def compile_heats():
     """ Compile a list of heats
     """
 
-    regex = re.compile(REGEX_HEATS)
+    regexHeats = re.compile(REGEX_HEATS)
+    regexPax = re.compile(REGEX_PAX)
+    regexRaw = re.compile(REGEX_RAW)
 
     for root, directories, files in os.walk(TSLIVEDIR, topdown=False):
         for name in files:
-            result = regex.search(name)
-            if result is not None:
-                HEATS[result.group(1)] = os.path.join(root, name)
+            resultHeats = regexHeats.search(name)
+            resultPax = regexPax.search(name)
+            resultRaw = regexRaw.search(name)
+            if resultHeats is not None:
+                HEATS[resultHeats.group(1)] = os.path.join(root, name)
+            elif resultPax is not None:
+                HEATS[resultPax.group(1)] = os.path.join(root, name)
+            elif resultRaw is not None:
+                HEATS[resultRaw.group(1)] = os.path.join(root, name)
 
     HEATS['Exit'] = "Exit"
 
@@ -91,6 +102,19 @@ def compile_classes(heat):
                 if result is not None:
                     CLASSES[i] = os.path.join(root, name)
 
+def compile_paxraw(file):
+    """
+    """
+
+    regex = re.compile(file)
+
+    for root, directories, files in os.walk(TSLIVEDIR, topdown=False):
+        for name in files:
+            result = regex.search(name)
+            if result is not None:
+                CLASSES[file] = os.path.join(root, name)
+
+
 def replace(category):
     """ Function to replace Pronto text with audit category
     """
@@ -109,6 +133,7 @@ def replace(category):
     return div
 
 clear()
+
 compile_heats()
 
 pp = pprint.PrettyPrinter(indent=4)
@@ -138,19 +163,28 @@ questionCategory = [
 ]
 
 while True:
+    CLASSES = {}
     print("")
     answersHeats = prompt(questionHeats)
-    #answersHeats = {'Heat': 'Heat1'}
+#     answersHeats = {'Heat': 'PaxIndexDay1'}
+#     answersHeats = {'Heat': 'Heat1'}
 
     if (answersHeats == {}) or (answersHeats['Heat'] == 'Exit'):
         break
     else:
-        #answersCategory = {'Category': 'Final'}
+#         answersCategory = {'Category': 'Final'}
         answersCategory = prompt(questionCategory)
 
-        compile_classes(HEATS[answersHeats['Heat']])
+        if "Heat" not in answersHeats['Heat']:
+            compile_paxraw(answersHeats['Heat'])
+        else:
+            compile_classes(HEATS[answersHeats['Heat']])
+
+        print("")
+        print("Updating the following classes:")
 
         for CLASS, FILE in CLASSES.items():
+            print(CLASS)
 
             with open(FILE) as fp:
                 soup = BeautifulSoup(fp, 'html.parser')
