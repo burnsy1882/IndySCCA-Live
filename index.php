@@ -115,17 +115,17 @@
                         <tr valign="bottom">
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("files/PaxIndexDay1.html", "PAX Day 1") ?>
+                                    <?php echo fileexists("PaxIndexDay1.html", "PAX Day 1") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("files/PaxIndexDay2.html", "PAX Day 2") ?>
+                                    <?php echo fileexists("PaxIndexDay2.html", "PAX Day 2") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("files/PaxIndexOverall.html", "PAX Overall") ?>
+                                    <?php echo fileexists("PaxIndexOverall.html", "PAX Overall") ?>
                                 </font>
                             </td>
                         </tr>
@@ -153,17 +153,17 @@
                         <tr valign="bottom">
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("files/RawDay1.html", "RAW Day 1") ?>
+                                    <?php echo fileexists("RawDay1.html", "RAW Day 1") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("files/RawDay2.html", "RAW Day 2") ?>
+                                    <?php echo fileexists("RawDay2.html", "RAW Day 2") ?>
                                 </font>
                             </td>
                             <td align="center">
                                 <font face="Arial">
-                                    <?php echo fileexists("files/RawOverall.html", "RAW Overall") ?>
+                                    <?php echo fileexists("RawOverall.html", "RAW Overall") ?>
                                 </font>
                             </td>
                         </tr>

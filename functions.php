@@ -40,7 +40,7 @@
     {
         if (file_exists("files/".$file))
         {
-            return '<b><a href="'.$file.'">'.$name.'</a></b>';
+            return '<b><a href="files/'.$file.'">'.$name.'</a></b>';
         }
         else
         {
