@@ -7,8 +7,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-        <Title>Pronto Timing System Live Timing</Title>
+        <Title>Indianapolis Region SCCA Live Timing</Title>
         <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- <link rel="stylesheet" href="rs.css">
         <link rel="stylesheet" href="BlackOpsOne.css">
@@ -26,32 +27,26 @@
     </head>
     <body>
         <!-- Header -->
-        <div align="center">
+        <div class="w3-mobile" align="center">
             <table style="width:90%" class="w3-table w3-centered">
                 <tbody>
                     <tr>
                         <td>
-                            <span class="style1">
-                                <b>
-                                    <big>Pronto Timing System Live Timing</big>
-                                </b>
-                            </span>
+                            <b>
+                                <big>Indianapolis Region SCCA Live Timing</big>
+                            </b>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <span class="style1">
-                                <?php include 'files/eventName.html' ?>
-                            </span>
+                            <?php include 'files/eventName.html' ?>
                         </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <span class="style1">
-                                Event Sponsored By:
-                            </span>
+                            Event Sponsored By:
                         </td>
                     </tr>
 
@@ -69,7 +64,7 @@
                     <?php
                         if ($fmchannel != 0)
                         {
-                            echo '<tr><td><span class="style1">';
+                            echo '<tr><td><span>';
                             echo '<b>Local Site FM Channel: '.$fmchannel.'</b>';
                             echo '<span></td></tr>';
                         }
@@ -81,7 +76,7 @@
         <br />
 
         <!-- Run Ticker -->
-        <div align="center">
+        <div class="w3-mobile" align="center">
             <span class="style1">
                 <?php include 'files/RunTickerTable.php' ?>
             </span>
@@ -90,7 +85,7 @@
         <br />
 
         <!-- List of classes -->
-        <div align="center">
+        <div class="w3-mobile" align="center">
             <span class="style1">
                 <?php include 'classes.php' ?>
             </span>
@@ -99,7 +94,7 @@
         <br />
 
         <!-- PAX -->
-        <div align="center">
+        <div class="w3-mobile" align="center">
             <span class="style1">
                 <table style="width:90%" id="tbl01" class="w3-table w3-striped w3-border w3-bordered w3-centered">
                     <thead>
@@ -137,7 +132,7 @@
         <br />
 
         <!-- RAW -->
-        <div align="center">
+        <div class="w3-mobile" align="center">
             <span class="style1">
                 <table style="width:90%" id="tbl01" class="w3-table w3-striped w3-border w3-bordered w3-centered">
                     <thead>
@@ -175,7 +170,7 @@
         <br />
 
         <!-- Run/Work -->
-        <div align="center">
+        <div class="w3-mobile" align="center">
             <span class="style1">
                 <?php include 'runOrder.php' ?>
             </span>
@@ -184,9 +179,48 @@
         <br />
 
         <!-- Footer -->
-        <div align="center">
-            <span class="style1">
-                <a href="http://www.prontotimingsystem.com/"><font face="Arial" size="-2">Copyright &copy; Pronto Timing System 2007-2020 All Rights Reserved.</font></a>
+        <div class="w3-mobile" align="center">
+            <table style="width:90%" class="w3-table w3-centered">
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <span>
+                                <b>Timing and Live Results, Powered by:</b>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <a href="http://www.ProntoTimingSystem.com">
+                                <img src="http://www.ProntoTimingSystem.com/ProntoLogo.jpg" width="270" height="110">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <span>
+                                <a href="http://www.ProntoTimingSystem.com">www.ProntoTimingSystem.com</a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <span>
+                                OFFICIAL Timing System of the SCCA National Solo Program
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <span>
+                                <b>Available for your region</b>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <span>
+                <a href="http://www.prontotimingsystem.com/"><font face="Arial" size="-2">Copyright &copy; Pronto Timing System 2007-2021 All Rights Reserved.</font></a>
             </span>
             <br />
             <span>

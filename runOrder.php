@@ -8,7 +8,7 @@
     }
 ?>
 
-<table style="width:65%" id="tbl-runOrder" class="w3-table w3-striped w3-border w3-bordered w3-centered">
+<table style="width:90%" id="tbl-runOrder" class="w3-table w3-striped w3-border w3-bordered w3-centered">
     <thead>
         <tr class="w3-gray">
             <th align="center">Heat</th>
