@@ -21,7 +21,7 @@
             $strReturn .= $class;
         }
 
-        $strReturn .= " / ";
+        $strReturn .= "&nbsp;/&nbsp;";
 
         // Check womens class
         if (file_exists("files/".$class."L.php"))
@@ -55,11 +55,11 @@
         }
     }
 
-    function fileexistshtml($file, $show = TRUE, $name = "", $before, $after)
+    function fileexistshtml($file, $name = "", $show = TRUE, $before, $after)
     {
         if (file_exists("files/".$file))
         {
-            return $before.'<b><a href="'.$file.'">'.$name.'</a></b>'.$after;
+            return $before.'<b><a href="files/'.$file.'">'.$name.'</a></b>'.$after;
         }
         else
         {

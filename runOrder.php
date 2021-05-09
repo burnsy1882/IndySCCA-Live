@@ -8,11 +8,11 @@
     }
 ?>
 
-<table style="width:90%" id="tbl-runOrder" class="w3-table w3-striped w3-border w3-bordered w3-centered">
+<table id="tbl-runOrder" class="w3-table w3-striped w3-border w3-bordered w3-centered">
     <thead>
         <tr class="w3-gray">
-            <th align="center">Heat</th>
-            <th align="center" colspan=2>Classes Running:</th>
+            <th>Heat</th>
+            <th colspan=2>Classes Running:</th>
         </tr>
     </thead>
 
@@ -33,8 +33,8 @@
 
     <thead>
         <tr class="w3-gray">
-            <th align="center">Heat</th>
-            <th align="center" colspan=2>Classes Working:</th>
+            <th>Heat</th>
+            <th colspan=2>Classes Working:</th>
         </tr>
     </thead>
 
