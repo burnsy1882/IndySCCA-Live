@@ -1,5 +1,5 @@
-<div class="w3-responsive data-table">
-    <table id="tblRunTicker" class="w3-table w3-striped w3-border w3-bordered w3-centered">
+<div class="w3-responsive">
+    <table id="tblRunTicker" class="w3-table w3-striped w3-border w3-bordered w3-centered data-table">
         <thead>
             <tr class="panel-heading">
                 <th colspan=5>RUN TICKER</th>

@@ -9,7 +9,6 @@
         <head>
             <title>Indianapolis Region SCCA Live Timing</title>
 
-            <meta charset="UTF-8">
             <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
             <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
             <meta http-equiv="Pragma" content="no-cache">
@@ -19,52 +18,50 @@
 
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
             <link rel="stylesheet" href="stylesheet.css">
+
             <script src="#"></script>
         </head>
 
         <body>
             <div class="w3-container page-container">
-                <div class="w3-panel w3-center page-title">
-                    <h2>Indianapolis Region SCCA Live Timing</h2>
-                </div>
 
-                <div class="w3-panel w3-center event-name">
-                    <?php include 'files/eventName.html' ?>
-                </div>
+                <!-- Page Title Section -->
+                <?php echo sectionInclude("pageTitle.html", "page-title"); ?>
 
-                <div class="w3-panel w3-center event-sponsor">
-                    Event Sponsored By:
-                </div>
+                <!-- Event Title Section -->
+                <?php echo sectionInclude("files/eventName.html", "event-title"); ?>
 
-                <div class="w3-panel w3-center event-sponsor">
-                    <a href="http://indyscca.org"><img src="http://indyscca.org/information/logosGraphicsDistribution/IndyRegion75thLogo_fullSize.jpg" height="200"></a>
-                    <?php echo sponsorexists("secondary.jpg", "test")?>
-                </div>
+                <!-- Sponsorship Section -->
+                <?php echo sectionInclude("sponsors.html", "sponsors"); ?>
 
-                <?php echo fileexistshtml("EventSupplementals.pdf", "Event Supplementals and Schedule", false, '<div class="w3-panel w3-center event-supplementals">', '</div>'); ?>
+                <!-- Event Supplementals Section -->
+                <?php echo sectionIncludeHtml("files/EventSupplementals.pdf", "Event Supplementals and Schedule", '<div class="w3-panel w3-center event-supplementals">', '</div>'); ?>
 
-                <?php echo fileexistshtml("liveaudio.html", "Click here for live audio broadcast", false, '<div class="w3-panel w3-center audio-broadcast">', '</div>'); ?>
+                <!-- Live Audio Section -->
+                <?php echo sectionIncludeHtml("files/liveaudio.html", "Click here for live audio broadcast", '<div class="w3-panel w3-center audio-broadcast">', '</div>'); ?>
 
+                <!-- FM Channel Section -->
                 <?php
                     if ($fmchannel != 0)
                     {
-                        echo '<div class="w3-panel w3-center fm-channel>';
-                        echo '<b>Local Site FM Channel: '.$fmchannel.'</b>';
+                        echo '<div class="w3-panel w3-center fm-channel">';
+                        echo 'Local Site FM Channel: '.$fmchannel.'';
                         echo '</div>';
                     }
                 ?>
 
-                <div class="w3-panel w3-center run-ticker">
-                    <?php include 'files/RunTickerTable.php' ?>
-                </div>
+                <!-- Run Ticker Section -->
+                <?php echo sectionInclude("files/RunTickerTable.php", "run-ticker"); ?>
 
+                <!-- Class Links Section -->
                 <div class="w3-panel w3-center classes">
                     <div class="w3-padding panel-heading">CLASSES</div>
                     <?php include 'classes-horizontal.php' ?>
                 </div>
 
+                <!-- PAX Times Section -->
                 <div class="w3-panel w3-center w3-responsive pax">
-                    <table id="tblPax" class="w3-table w3-striped w3-border w3-bordered w3-centered">
+                    <table id="tblPax" class="w3-table w3-striped w3-border w3-bordered w3-centered data-table">
                         <thead>
                             <tr class="panel-heading">
                                 <th colspan="3">
@@ -88,8 +85,9 @@
                     </table>
                 </div>
 
+                <!-- RAW Times Section -->
                 <div class="w3-panel w3-center w3-resposive raw">
-                    <table id="tblRaw" class="w3-table w3-striped w3-border w3-bordered w3-centered">
+                    <table id="tblRaw" class="w3-table w3-striped w3-border w3-bordered w3-centered data-table">
                         <thead>
                             <tr class="panel-heading">
                                 <th align="center" colspan="3">
@@ -113,10 +111,12 @@
                     </table>
                 </div>
 
+                <!-- Run/Work Order Section -->
                 <div class="w3-panel w3-center">
                     <?php include 'runOrder.php' ?>
                 </div>
 
+                <!-- Copyright Section -->
                 <div class="w3-panel w3-center">
                     <table class="w3-table w3-centered">
                         <tbody>

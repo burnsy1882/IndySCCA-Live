@@ -1,5 +1,5 @@
 <div class="w3-responsive">
-    <table id="tbl01" class="w3-table w3-striped w3-border w3-bordered w3-centered">
+    <table id="tbl01" class="w3-table w3-striped w3-border w3-bordered w3-centered data-table">
         <tbody>
             <tr>
                 <td class="class-heading">STREET</td>
