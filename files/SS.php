@@ -10,9 +10,7 @@
             <meta http-equiv="refresh" content="30">
             <meta name="viewport" content="width=device-width,initial-scale=1">
 
-            <link rel="stylesheet" href="http://indyscca.org/SoloFiles/SoloResults/live/w3.css">
-            <link rel="stylesheet" href="http://indyscca.org/SoloFiles/SoloResults/live/rs.css">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Ops+One">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
             <link rel="stylesheet" href="http://indyscca.org/SoloFiles/SoloResults/live/stylesheet.css">
         </head>
 

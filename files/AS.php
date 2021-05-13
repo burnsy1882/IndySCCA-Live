@@ -9,9 +9,8 @@
 background-color:#ECECEC;
 }
 </style>
-<link rel='stylesheet' href='http://indyscca.org/SoloFiles/SoloResults/live/w3.css'>
-<link rel='stylesheet' href='http://indyscca.org/SoloFiles/SoloResults/live/rs.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Black+Ops+One'>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='http://indyscca.org/SoloFiles/SoloResults/live/stylesheet.css'>
 </head>
 <body>
 <Table align='center' style='width:65%' id='tblHeader' class='w3-table w3-centered'>
