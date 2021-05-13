@@ -1,0 +1,71 @@
+.w3-container {
+    padding: 0em 10px;
+}
+
+.page-container {}
+
+.page-title {}
+
+.event-name {}
+
+.event-sponsor {}
+
+.event-supplementals {}
+
+.audio-broadcast {}
+
+.fm-channel {}
+
+.run-ticker {}
+
+.panel-heading {
+    background-color: #000 !important;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.class-heading {
+    background-color: #000 !important;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.table-header.table-header {
+    background-color: #9e9e9e !important;
+}
+
+.table-subheader {
+    background-color: #f1f1f1 !important;
+}
+
+.w3-table th:first-child {
+    padding: 10px;
+}
+
+.w3-table td:first-child {
+    padding: 10px;
+}
+
+.w3-table td {
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.w3-bordered tr {
+    border-bottom: 1px solid #ccc;
+}
+
+th:not(:first-child) {
+    border-left: 1px solid #ccc;
+}
+
+td:not(:first-child){
+    border-left: 1px solid #ccc;
+}
+
+.results {}
+
+.data-table {}

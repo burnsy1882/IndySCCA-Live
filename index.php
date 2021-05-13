@@ -6,83 +6,67 @@
 ?>
 <!DOCTYPE html>
     <html lang="en">
-        <title>Indianapolis Region SCCA Live Timing</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-        <meta http-equiv="Pragma" content="no-cache">
-        <meta http-equiv="Expires" content="0">
-        <meta http-equiv="refresh" content="30">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <style>
-            .w3-table th:first-child {
-                padding: 10px;
-            }
-            .w3-table td:first-child {
-                padding: 10px;
-            }
-            .w3-table td {
-                vertical-align: middle;
-                padding: 10px;
-            }
-            th:not(:first-child) {
-                border-left: 1px solid #ccc;
-            }
-            td:not(:first-child){
-                border-left: 1px solid #ccc;
-            }
-            /* td:last-child {
-                border-right: 1px solid #ccc;
-            } */
-        </style>
-        <script src=""></script>
-        
+        <head>
+            <title>Indianapolis Region SCCA Live Timing</title>
+
+            <meta charset="UTF-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+            <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+            <meta http-equiv="Pragma" content="no-cache">
+            <meta http-equiv="Expires" content="0">
+            <meta http-equiv="refresh" content="30">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link rel="stylesheet" href="stylesheet.css">
+            <script src="#"></script>
+        </head>
+
         <body>
-            <div class="w3-container">
-                <div class="w3-panel w3-center">
+            <div class="w3-container page-container">
+                <div class="w3-panel w3-center page-title">
                     <h2>Indianapolis Region SCCA Live Timing</h2>
                 </div>
-                
-                <div class="w3-panel w3-center">
+
+                <div class="w3-panel w3-center event-name">
                     <?php include 'files/eventName.html' ?>
                 </div>
-                
-                <div class="w3-panel w3-center">
+
+                <div class="w3-panel w3-center event-sponsor">
                     Event Sponsored By:
                 </div>
-                
-                <div class="w3-panel w3-center">
+
+                <div class="w3-panel w3-center event-sponsor">
                     <a href="http://indyscca.org"><img src="http://indyscca.org/information/logosGraphicsDistribution/IndyRegion75thLogo_fullSize.jpg" height="200"></a>
                     <?php echo sponsorexists("secondary.jpg", "test")?>
                 </div>
-                
-                <?php echo fileexistshtml("EventSupplementals.pdf", "Event Supplementals and Schedule", false, '<div class="w3-panel w3-center">', '</div>'); ?>
 
-                <?php echo fileexistshtml("liveaudio.html", "Click here for live audio broadcast", false, '<div class="w3-panel w3-center">', '</div>'); ?>
-                
+                <?php echo fileexistshtml("EventSupplementals.pdf", "Event Supplementals and Schedule", false, '<div class="w3-panel w3-center event-supplementals">', '</div>'); ?>
+
+                <?php echo fileexistshtml("liveaudio.html", "Click here for live audio broadcast", false, '<div class="w3-panel w3-center audio-broadcast">', '</div>'); ?>
+
                 <?php
                     if ($fmchannel != 0)
                     {
-                        echo '<div class="w3-panel w3-center>';
+                        echo '<div class="w3-panel w3-center fm-channel>';
                         echo '<b>Local Site FM Channel: '.$fmchannel.'</b>';
                         echo '</div>';
                     }
                 ?>
-                
-                <div class="w3-panel w3-center">
+
+                <div class="w3-panel w3-center run-ticker">
                     <?php include 'files/RunTickerTable.php' ?>
                 </div>
-                
-                <div class="w3-panel w3-center">
-                    <div class="w3-black w3-padding">CLASSES</div>
+
+                <div class="w3-panel w3-center classes">
+                    <div class="w3-padding panel-heading">CLASSES</div>
                     <?php include 'classes-horizontal.php' ?>
                 </div>
-                
-                <div class="w3-panel w3-center">
-                    <table id="tbl01" class="w3-table w3-striped w3-border w3-bordered w3-centered">
+
+                <div class="w3-panel w3-center w3-responsive pax">
+                    <table id="tblPax" class="w3-table w3-striped w3-border w3-bordered w3-centered">
                         <thead>
-                            <tr class="w3-black">
+                            <tr class="panel-heading">
                                 <th colspan="3">
                                     PAX
                                 </th>
@@ -103,11 +87,11 @@
                         </tbody>
                     </table>
                 </div>
-                
-                <div class="w3-panel w3-center">
-                    <table id="tbl01" class="w3-table w3-striped w3-border w3-bordered w3-centered">
+
+                <div class="w3-panel w3-center w3-resposive raw">
+                    <table id="tblRaw" class="w3-table w3-striped w3-border w3-bordered w3-centered">
                         <thead>
-                            <tr class="w3-black">
+                            <tr class="panel-heading">
                                 <th align="center" colspan="3">
                                     RAW
                                 </th>
@@ -128,11 +112,11 @@
                         </tbody>
                     </table>
                 </div>
-                
+
                 <div class="w3-panel w3-center">
                     <?php include 'runOrder.php' ?>
                 </div>
-                
+
                 <div class="w3-panel w3-center">
                     <table class="w3-table w3-centered">
                         <tbody>

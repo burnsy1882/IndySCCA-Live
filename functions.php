@@ -67,10 +67,6 @@
             {
                 return $before.$name.$after;
             }
-            else
-            {
-                return "&nbsp;";
-            }
         }
     }
 ?>
