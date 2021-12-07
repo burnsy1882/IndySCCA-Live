@@ -1,13 +1,14 @@
 <?php
-    include_once 'functions.php';
+    //include_once 'functions.php';
+    include_once 'functions-nccc.php';
 
     global $fmchannel;
-    $fmchannel = 0;
+    $fmchannel = 98.5;
 ?>
 <!DOCTYPE html>
     <html lang="en">
         <head>
-            <title>Indianapolis Region SCCA Live Timing</title>
+            <title><?php include 'pageTitle-nccc.html' ?></title>
 
             <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
             <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -26,13 +27,13 @@
             <div class="w3-container page-container">
 
                 <!-- Page Title Section -->
-                <?php echo sectionInclude("pageTitle.html", "page-title"); ?>
+                <?php echo sectionInclude("pageTitle-nccc.html", "page-title"); ?>
 
                 <!-- Event Title Section -->
                 <?php echo sectionInclude("files/eventName.html", "event-title"); ?>
 
                 <!-- Sponsorship Section -->
-                <?php echo sectionInclude("sponsors.html", "sponsors"); ?>
+                <?php echo sectionInclude("sponsors-nccc.html", "sponsors"); ?>
 
                 <!-- Event Supplementals Section -->
                 <?php echo sectionIncludeHtml("files/EventSupplementals.pdf", "Event Supplementals and Schedule", '<div class="w3-panel w3-center event-supplementals">', '</div>'); ?>
@@ -56,7 +57,8 @@
                 <!-- Class Links Section -->
                 <div class="w3-panel w3-center classes">
                     <div class="w3-padding panel-heading">CLASSES</div>
-                    <?php include 'classes-horizontal.php' ?>
+                    <div class="w3-padding w3-hide-large scroll">SCROLL -></div>
+                    <?php include 'classes-nccc.php' ?>
                 </div>
 
                 <!-- PAX Times Section -->
