@@ -1,5 +1,5 @@
 <?php
-    include_once 'functions.php';
+    include_once 'functions-oloa.php';
 
     global $fmchannel;
     $fmchannel = 0;
@@ -32,7 +32,7 @@
                 <?php echo sectionInclude("files/eventName.html", "event-title"); ?>
 
                 <!-- Sponsorship Section -->
-                <?php echo sectionInclude("sponsors.html", "sponsors"); ?>
+                <?php echo sectionInclude("sponsors-oloa.html", "sponsors"); ?>
 
                 <!-- Event Supplementals Section -->
                 <?php echo sectionIncludeHtml("files/EventSupplementals.pdf", "Event Supplementals and Schedule", '<div class="w3-panel w3-center event-supplementals">', '</div>'); ?>
@@ -56,7 +56,7 @@
                 <!-- Class Links Section -->
                 <div class="w3-panel w3-center classes">
                     <div class="w3-padding panel-heading">CLASSES</div>
-                    <?php include 'classes-horizontal.php' ?>
+                    <?php include 'classes-oloa.php' ?>
                 </div>
 
                 <!-- PAX Times Section -->

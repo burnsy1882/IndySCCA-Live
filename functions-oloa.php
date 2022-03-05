@@ -1,4 +1,20 @@
 <?php
+    function sectionInclude($file, $cssClass)
+    {
+        if (file_exists($file))
+        {
+            return '<div class="w3-panel w3-center '.$cssClass.'">'.file_get_contents($file).'</div>';
+        }
+    }
+
+    function sectionIncludeHtml($file, $text, $htmlBefore, $htmlAfter)
+    {
+        if (file_exists($file))
+        {
+            return $htmlBefore.'<a href="'.$file.'">'.$text.'</a>'.$htmlAfter;
+        }
+    }
+
     function sponsorexists($sponsor, $sponsorURL)
     {
         if (file_exists("files/".$sponsor))
