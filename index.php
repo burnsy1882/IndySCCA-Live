@@ -7,7 +7,7 @@
 <!DOCTYPE html>
     <html lang="en">
         <head>
-            <title>Indianapolis Region SCCA Live Timing</title>
+            <title><?php include 'pageTitle-oloa.html' ?></title>
 
             <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
             <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -26,7 +26,7 @@
             <div class="w3-container page-container">
 
                 <!-- Page Title Section -->
-                <?php echo sectionInclude("pageTitle.html", "page-title"); ?>
+                <h2><?php echo sectionInclude("pageTitle-oloa.html", "page-title"); ?></h2>
 
                 <!-- Event Title Section -->
                 <?php echo sectionInclude("files/eventName.html", "event-title"); ?>
@@ -56,6 +56,7 @@
                 <!-- Class Links Section -->
                 <div class="w3-panel w3-center classes">
                     <div class="w3-padding panel-heading">CLASSES</div>
+                    <div class="w3-padding scroll">SCROLL -></div>
                     <?php include 'classes-oloa.php' ?>
                 </div>
 
@@ -113,7 +114,7 @@
 
                 <!-- Run/Work Order Section -->
                 <div class="w3-panel w3-center">
-                    <?php include 'runOrder.php' ?>
+                    <?php include 'runOrder-oloa.php' ?>
                 </div>
 
                 <!-- Copyright Section -->
