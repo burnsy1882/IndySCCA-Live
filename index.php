@@ -27,7 +27,7 @@
             <div class="w3-container page-container">
 
                 <!-- Page Title Section -->
-                <?php echo sectionInclude("pageTitle-nccc.html", "page-title"); ?>
+                <h2><?php echo sectionInclude("pageTitle-nccc.html", "page-title"); ?></h2>
 
                 <!-- Event Title Section -->
                 <?php echo sectionInclude("files/eventName.html", "event-title"); ?>
@@ -57,7 +57,7 @@
                 <!-- Class Links Section -->
                 <div class="w3-panel w3-center classes">
                     <div class="w3-padding panel-heading">CLASSES</div>
-                    <div class="w3-padding w3-hide-large scroll">SCROLL -></div>
+                    <div class="w3-padding scroll">SCROLL -></div>
                     <?php include 'classes-nccc.php' ?>
                 </div>
 
@@ -89,7 +89,7 @@
 
                 <!-- Run/Work Order Section -->
                 <div class="w3-panel w3-center">
-                    <?php include 'runOrder.php' ?>
+                    <?php include 'runOrder-nccc.php' ?>
                 </div>
 
                 <!-- Copyright Section -->
