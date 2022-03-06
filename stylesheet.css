@@ -202,10 +202,3 @@ rsh1:after {
 
 .w3-pronto-color-right
 {color:#000000;background-color:#eaecef}
-
-@media (max-width: 993px)
-{
-    .w3-show-large {
-        display: none!important;
-    }
-}
