@@ -1,13 +1,10 @@
 <?php
     include_once 'functions.php';
-
-    #global $fmchannel;
-    #$fmchannel = 0;
 ?>
 <!DOCTYPE html>
     <html lang="en">
         <head>
-            <title>Indianapolis Region SCCA Live Timing</title>
+            <title><?php include 'pageTitle.html' ?></title>
 
             <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
             <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -18,15 +15,13 @@
 
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
             <link rel="stylesheet" href="stylesheet.css">
-
-            <script src="#"></script>
         </head>
 
         <body>
             <div class="w3-container page-container">
 
                 <!-- Page Title Section -->
-                <?php echo sectionInclude("pageTitle.html", "page-title"); ?>
+                <h2><?php echo sectionInclude("pageTitle.html", "page-title"); ?></h2>
 
                 <!-- Event Title Section -->
                 <?php echo sectionInclude("files/eventName.html", "event-title"); ?>
