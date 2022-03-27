@@ -15,7 +15,8 @@ GitHub repository for the IndySCCA.org live timing website.
 3. Edit the following files to tailor the site to your to your needs:
    - pageTitle.html - Title of the live timing website
    - sponsors.html - List of images to show as sponsors on the website
-   - stylesheet.css - CSS file that stylizes 
+   - stylesheet.css - CSS file that stylizes the main page and subsequent class pages
+   - 
 
 In order to use any of the branches above,
 !(/files/tslive.png)

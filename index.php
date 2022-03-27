@@ -1,8 +1,8 @@
 <?php
     include_once 'functions.php';
 
-    global $fmchannel;
-    $fmchannel = 0;
+    #global $fmchannel;
+    #$fmchannel = 0;
 ?>
 <!DOCTYPE html>
     <html lang="en">
@@ -56,7 +56,16 @@
                 <!-- Class Links Section -->
                 <div class="w3-panel w3-center classes">
                     <div class="w3-padding panel-heading">CLASSES</div>
-                    <?php include 'classes-horizontal.php' ?>
+                    <?php
+                        if ($horizontal_classes)
+                        {
+                            include 'classes-horizontal.php';
+                        }
+                        else
+                        {
+                            include 'classes-vertical.php';
+                        }
+                    ?>
                 </div>
 
                 <!-- PAX Times Section -->

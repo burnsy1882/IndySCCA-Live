@@ -1,4 +1,22 @@
 <?php
+
+    /**
+     * FM Channel
+     *
+     * Set this to the FM channel of your FM broadcaster if in use, eg. 98.5;
+     * Leave at 0 if you do not utilize an FM broadcaster
+     */
+    $fmchannel = 0;
+
+    /**
+     * Class table styling
+     *
+     * If set to True, the classes table on the index page will be ordered horizontally
+     * If set to False, the classes table on the index page will be ordered vertically
+     * Default is True
+     */
+    $horizontal_classes = True;
+
     function sectionInclude($file, $cssClass)
     {
         if (file_exists($file))
