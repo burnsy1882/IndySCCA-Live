@@ -1,14 +1,10 @@
 <?php
-    //include_once 'functions.php';
-    include_once 'functions-nccc.php';
-
-    global $fmchannel;
-    $fmchannel = 98.5;
+    include_once 'functions.php';
 ?>
 <!DOCTYPE html>
     <html lang="en">
         <head>
-            <title><?php include 'pageTitle-nccc.html' ?></title>
+            <title><?php include 'pageTitle.html' ?></title>
 
             <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
             <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -19,21 +15,19 @@
 
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
             <link rel="stylesheet" href="stylesheet.css">
-
-            <!-- <script src="#"></script> -->
         </head>
 
         <body>
             <div class="w3-container page-container">
 
                 <!-- Page Title Section -->
-                <h2><?php echo sectionInclude("pageTitle-nccc.html", "page-title"); ?></h2>
+                <h2><?php echo sectionInclude("pageTitle.html", "page-title"); ?></h2>
 
                 <!-- Event Title Section -->
                 <?php echo sectionInclude("files/eventName.html", "event-title"); ?>
 
                 <!-- Sponsorship Section -->
-                <?php echo sectionInclude("sponsors-nccc.html", "sponsors"); ?>
+                <?php echo sectionInclude("sponsors.html", "sponsors"); ?>
 
                 <!-- Event Supplementals Section -->
                 <?php echo sectionIncludeHtml("files/EventSupplementals.pdf", "Event Supplementals and Schedule", '<div class="w3-panel w3-center event-supplementals">', '</div>'); ?>
@@ -58,7 +52,16 @@
                 <div class="w3-panel w3-center classes">
                     <div class="w3-padding panel-heading">CLASSES</div>
                     <div class="w3-padding scroll">SCROLL -></div>
-                    <?php include 'classes-nccc.php' ?>
+                    <?php
+                        if ($horizontal_classes)
+                        {
+                            include 'classes-horizontal.php';
+                        }
+                        else
+                        {
+                            include 'classes-vertical.php';
+                        }
+                    ?>
                 </div>
 
                 <!-- RAW Times Section -->
@@ -89,7 +92,7 @@
 
                 <!-- Run/Work Order Section -->
                 <div class="w3-panel w3-center">
-                    <?php include 'runOrder-nccc.php' ?>
+                    <?php include 'runOrder.php' ?>
                 </div>
 
                 <!-- Copyright Section -->

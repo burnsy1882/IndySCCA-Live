@@ -30,26 +30,5 @@
                 }
             ?>
         </tbody>
-
-        <thead>
-            <tr class="table-header">
-                <th>Heat</th>
-                <th colspan=2>Classes Working:</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <?php
-                for ($i = 1; $i <= $heats; $i++)
-                {
-                    echo "<tr>";
-                    echo "<td>$i</td>";
-                    $file = file_get_contents("./files/Heat".$i."WorkOrder.html");
-                    echo "<td>$file</td>";
-                    echo "<td>&nbsp;</td>";
-                    echo "</tr>";
-                }
-            ?>
-        </tbody>
     </table>
 </div>
