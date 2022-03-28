@@ -1,8 +1,5 @@
 <?php
-    include_once 'functions-oloa.php';
-
-    global $fmchannel;
-    $fmchannel = 0;
+    include_once 'functions.php';
 ?>
 <!DOCTYPE html>
     <html lang="en">
@@ -18,21 +15,19 @@
 
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
             <link rel="stylesheet" href="stylesheet.css">
-
-            <script src="#"></script>
         </head>
 
         <body>
             <div class="w3-container page-container">
 
                 <!-- Page Title Section -->
-                <h2><?php echo sectionInclude("pageTitle-oloa.html", "page-title"); ?></h2>
+                <h2><?php echo sectionInclude("pageTitle.html", "page-title"); ?></h2>
 
                 <!-- Event Title Section -->
                 <?php echo sectionInclude("files/eventName.html", "event-title"); ?>
 
                 <!-- Sponsorship Section -->
-                <?php echo sectionInclude("sponsors-oloa.html", "sponsors"); ?>
+                <?php echo sectionInclude("sponsors.html", "sponsors"); ?>
 
                 <!-- Event Supplementals Section -->
                 <?php echo sectionIncludeHtml("files/EventSupplementals.pdf", "Event Supplementals and Schedule", '<div class="w3-panel w3-center event-supplementals">', '</div>'); ?>
@@ -57,7 +52,16 @@
                 <div class="w3-panel w3-center classes">
                     <div class="w3-padding panel-heading">CLASSES</div>
                     <div class="w3-padding scroll">SCROLL -></div>
-                    <?php include 'classes-oloa.php' ?>
+                    <?php
+                        if ($horizontal_classes)
+                        {
+                            include 'classes-horizontal.php';
+                        }
+                        else
+                        {
+                            include 'classes-vertical.php';
+                        }
+                    ?>
                 </div>
 
                 <!-- PAX Times Section -->
@@ -114,7 +118,7 @@
 
                 <!-- Run/Work Order Section -->
                 <div class="w3-panel w3-center">
-                    <?php include 'runOrder-oloa.php' ?>
+                    <?php include 'runOrder.php' ?>
                 </div>
 
                 <!-- Copyright Section -->
@@ -150,7 +154,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="http://www.prontotimingsystem.com/"><font face="Arial" size="-2">Copyright &copy; Pronto Timing System 2007-2021 All Rights Reserved.</font></a>
+                                    <a href="http://www.prontotimingsystem.com/"><font face="Arial" size="-2">Copyright &copy; Pronto Timing System 2007-2022 All Rights Reserved.</font></a>
                                 </td>
                             </tr>
                             <tr>
