@@ -51,6 +51,7 @@
                 <!-- Class Links Section -->
                 <div class="w3-panel w3-center classes">
                     <div class="w3-padding panel-heading">CLASSES</div>
+                    <div class="w3-padding scroll">SCROLL -></div>
                     <?php
                         if ($horizontal_classes)
                         {

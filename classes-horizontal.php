@@ -3,6 +3,7 @@
         <tbody>
             <tr>
                 <td class="class-heading">STREET</td>
+                <td><?php echo classexists("SSR"); ?></td>
                 <td><?php echo classexists("SS"); ?></td>
                 <td><?php echo classexists("AS"); ?></td>
                 <td><?php echo classexists("BS"); ?></td>
@@ -12,16 +13,15 @@
                 <td><?php echo classexists("FS"); ?></td>
                 <td><?php echo classexists("GS"); ?></td>
                 <td><?php echo classexists("HS"); ?></td>
-                <td><?php echo classexists("SSR"); ?></td>
             </tr>
             <tr>
                 <td class="class-heading">STREET TOURING</td>
+                <td><?php echo classexists("SST"); ?></td>
                 <td><?php echo classexists("STU"); ?></td>
                 <td><?php echo classexists("STR"); ?></td>
                 <td><?php echo classexists("STX"); ?></td>
                 <td><?php echo classexists("STS"); ?></td>
                 <td><?php echo classexists("STH"); ?></td>
-                <td><?php echo classexists("EVX"); ?></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -80,49 +80,10 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="class-heading">KART/FSAE</td>
-                <td><?php echo classexists("FSAE"); ?></td>
-                <td><?php echo classexists("KM"); ?></td>
-                <td><?php echo classexists("JA"); ?></td>
-                <td><?php echo classexists("JB"); ?></td>
-                <td><?php echo classexists("JC"); ?></td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="class-heading">SPEC/CAM</td>
-                <td><?php echo classexists("SSC"); ?></td>
+                <td class="class-heading">CAM</td>
                 <td><?php echo classexists("CAMC"); ?></td>
                 <td><?php echo classexists("CAMT"); ?></td>
                 <td><?php echo classexists("CAMS"); ?></td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="class-heading">STREET TOURING</td>
-                <td><?php echo classexists("HCS"); ?></td>
-                <td><?php echo classexists("HCR"); ?></td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="class-heading">XTREME</td>
-                <td><?php echo classexists("XSA"); ?></td>
-                <td><?php echo classexists("XSB"); ?></td>
-                <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -141,6 +102,19 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="class-heading">OTHER</td>
+                <td><?php echo classexists("EVX"); ?></td>
+                <td><?php echo classexists("FSAE"); ?></td>
+                <td><?php echo classexists("HCS"); ?></td>
+                <td><?php echo classexists("HCR"); ?></td>
+                <td><?php echo classexists("KM"); ?></td>
+                <td><?php echo classexists("SSC"); ?></td>
+                <td><?php echo classexists("XSA"); ?></td>
+                <td><?php echo classexists("XSB"); ?></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
