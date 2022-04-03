@@ -106,3 +106,5 @@ MANIFEST
 *.spec
 
 # End of https://www.toptal.com/developers/gitignore/api/backup,eclipse
+
+report/
