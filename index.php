@@ -1,10 +1,13 @@
 <?php
-    include_once 'functions.php';
+/**
+ * Include set of functions for use in this site
+ */
+include_once 'functions.php';
 ?>
 <!DOCTYPE html>
     <html lang="en">
         <head>
-            <title><?php include 'pageTitle.html' ?></title>
+            <title><?php include 'pageTitle.html'; ?></title>
 
             <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
             <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -15,13 +18,16 @@
 
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
             <link rel="stylesheet" href="stylesheet.css">
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="script.js"></script>
         </head>
 
         <body>
             <div class="w3-container page-container">
 
                 <!-- Page Title Section -->
-                <h2><?php echo sectionInclude("pageTitle.html", "page-title"); ?></h2>
+                <?php echo sectionInclude("pageTitle.html", "page-title"); ?>
 
                 <!-- Event Title Section -->
                 <?php echo sectionInclude("files/eventName.html", "event-title"); ?>
@@ -30,19 +36,22 @@
                 <?php echo sectionInclude("sponsors.html", "sponsors"); ?>
 
                 <!-- Event Supplementals Section -->
-                <?php echo sectionIncludeHtml("files/EventSupplementals.pdf", "Event Supplementals and Schedule", '<div class="w3-panel w3-center event-supplementals">', '</div>'); ?>
+                <?php echo sectionLinkInclude("files/EventSupplementals.pdf", "event-supplementals", "Event Supplementals and Schedule"); ?>
 
                 <!-- Live Audio Section -->
-                <?php echo sectionIncludeHtml("files/liveaudio.html", "Click here for live audio broadcast", '<div class="w3-panel w3-center audio-broadcast">', '</div>'); ?>
+                <?php echo sectionLinkInclude("files/liveaudio.html", "audio-broadcast", "Click here for live audio broadcast"); ?>
 
                 <!-- FM Channel Section -->
                 <?php
-                    if ($fmchannel != 0)
-                    {
-                        echo '<div class="w3-panel w3-center fm-channel">';
-                        echo 'Local Site FM Channel: '.$fmchannel.'';
-                        echo '</div>';
-                    }
+                /**
+                 * If a number other than 0 was set in functions.php, show a line on the website indicating what frequency is in use
+                 */
+                if ($fmChannel != 0)
+                {
+                    echo '<div class="w3-panel w3-center fm-channel">';
+                    echo 'Local Site FM Channel: '.$fmChannel.'';
+                    echo '</div>';
+                }
                 ?>
 
                 <!-- Run Ticker Section -->
@@ -53,14 +62,14 @@
                     <div class="w3-padding panel-heading">CLASSES</div>
                     <div class="w3-padding scroll">SCROLL -></div>
                     <?php
-                        if ($horizontal_classes)
-                        {
-                            include 'classes-horizontal.php';
-                        }
-                        else
-                        {
-                            include 'classes-vertical.php';
-                        }
+                    if ($horizontalClasses)
+                    {
+                        include 'classes-horizontal.php';
+                    }
+                    else
+                    {
+                        include 'classes-vertical.php';
+                    }
                     ?>
                 </div>
 
@@ -77,13 +86,13 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <?php echo fileexists("PaxIndexDay1.html", "PAX Day 1") ?>
+                                    <?php echo tableFileExists("PaxIndexDay1.html", "PAX Day 1"); ?>
                                 </td>
                                 <td>
-                                    <?php echo fileexists("PaxIndexDay2.html", "PAX Day 2") ?>
+                                    <?php echo tableFileExists("PaxIndexDay2.html", "PAX Day 2"); ?>
                                 </td>
                                 <td>
-                                    <?php echo fileexists("PaxIndexOverall.html", "PAX Overall") ?>
+                                    <?php echo tableFileExists("PaxIndexOverall.html", "PAX Overall"); ?>
                                 </td>
                             </tr>
                         </tbody>
@@ -103,13 +112,13 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <?php echo fileexists("RawDay1.html", "RAW Day 1") ?>
+                                    <?php echo tableFileExists("RawDay1.html", "RAW Day 1"); ?>
                                 </td>
                                 <td>
-                                    <?php echo fileexists("RawDay2.html", "RAW Day 2") ?>
+                                    <?php echo tableFileExists("RawDay2.html", "RAW Day 2"); ?>
                                 </td>
                                 <td>
-                                    <?php echo fileexists("RawOverall.html", "RAW Overall") ?>
+                                    <?php echo tableFileExists("RawOverall.html", "RAW Overall"); ?>
                                 </td>
                             </tr>
                         </tbody>
@@ -117,12 +126,12 @@
                 </div>
 
                 <!-- Run/Work Order Section -->
-                <div class="w3-panel w3-center">
-                    <?php include 'runOrder.php' ?>
+                <div class="w3-panel w3-center run-order">
+                    <?php include 'runOrder.php'; ?>
                 </div>
 
                 <!-- Copyright Section -->
-                <div class="w3-panel w3-center">
+                <div class="w3-panel w3-center copyright">
                     <table class="w3-table w3-centered">
                         <tbody>
                             <tr>
@@ -154,7 +163,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="http://www.prontotimingsystem.com/"><font face="Arial" size="-2">Copyright &copy; Pronto Timing System 2007-2021 All Rights Reserved.</font></a>
+                                    <a href="http://www.prontotimingsystem.com/"><font face="Arial" size="-2">Copyright &copy; Pronto Timing System 2007-2022 All Rights Reserved.</font></a>
                                 </td>
                             </tr>
                             <tr>

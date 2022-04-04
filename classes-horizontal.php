@@ -3,25 +3,25 @@
         <tbody>
             <tr>
                 <td class="class-heading">STREET</td>
-                <td><?php echo classexists("SSR"); ?></td>
-                <td><?php echo classexists("SS"); ?></td>
-                <td><?php echo classexists("AS"); ?></td>
-                <td><?php echo classexists("BS"); ?></td>
-                <td><?php echo classexists("CS"); ?></td>
-                <td><?php echo classexists("DS"); ?></td>
-                <td><?php echo classexists("ES"); ?></td>
-                <td><?php echo classexists("FS"); ?></td>
-                <td><?php echo classexists("GS"); ?></td>
-                <td><?php echo classexists("HS"); ?></td>
+                <td><?php echo classExists("SSR"); ?></td>
+                <td><?php echo classExists("SS"); ?></td>
+                <td><?php echo classExists("AS"); ?></td>
+                <td><?php echo classExists("BS"); ?></td>
+                <td><?php echo classExists("CS"); ?></td>
+                <td><?php echo classExists("DS"); ?></td>
+                <td><?php echo classExists("ES"); ?></td>
+                <td><?php echo classExists("FS"); ?></td>
+                <td><?php echo classExists("GS"); ?></td>
+                <td><?php echo classExists("HS"); ?></td>
             </tr>
             <tr>
                 <td class="class-heading">STREET TOURING</td>
-                <td><?php echo classexists("SST"); ?></td>
-                <td><?php echo classexists("STU"); ?></td>
-                <td><?php echo classexists("STR"); ?></td>
-                <td><?php echo classexists("STX"); ?></td>
-                <td><?php echo classexists("STS"); ?></td>
-                <td><?php echo classexists("STH"); ?></td>
+                <td><?php echo classExists("SST"); ?></td>
+                <td><?php echo classExists("STU"); ?></td>
+                <td><?php echo classExists("STR"); ?></td>
+                <td><?php echo classExists("STX"); ?></td>
+                <td><?php echo classExists("STS"); ?></td>
+                <td><?php echo classExists("STH"); ?></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -29,23 +29,23 @@
             </tr>
             <tr>
                 <td class="class-heading">STREET PREPARED</td>
-                <td><?php echo classexists("SSP"); ?></td>
-                <td><?php echo classexists("ASP"); ?></td>
-                <td><?php echo classexists("BSP"); ?></td>
-                <td><?php echo classexists("CSP"); ?></td>
-                <td><?php echo classexists("DSP"); ?></td>
-                <td><?php echo classexists("ESP"); ?></td>
-                <td><?php echo classexists("FSP"); ?></td>
+                <td><?php echo classExists("SSP"); ?></td>
+                <td><?php echo classExists("ASP"); ?></td>
+                <td><?php echo classExists("BSP"); ?></td>
+                <td><?php echo classExists("CSP"); ?></td>
+                <td><?php echo classExists("DSP"); ?></td>
+                <td><?php echo classExists("ESP"); ?></td>
+                <td><?php echo classExists("FSP"); ?></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="class-heading">STREET MODIFIED</td>
-                <td><?php echo classexists("SSM"); ?></td>
-                <td><?php echo classexists("SM"); ?></td>
-                <td><?php echo classexists("SMF"); ?></td>
-                <td><?php echo classexists("SMS"); ?></td>
+                <td><?php echo classExists("SSM"); ?></td>
+                <td><?php echo classExists("SM"); ?></td>
+                <td><?php echo classExists("SMF"); ?></td>
+                <td><?php echo classExists("SMS"); ?></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -55,11 +55,11 @@
             </tr>
             <tr>
                 <td class="class-heading">PREPARED</td>
-                <td><?php echo classexists("XP"); ?></td>
-                <td><?php echo classexists("CP"); ?></td>
-                <td><?php echo classexists("DP"); ?></td>
-                <td><?php echo classexists("EP"); ?></td>
-                <td><?php echo classexists("FP"); ?></td>
+                <td><?php echo classExists("XP"); ?></td>
+                <td><?php echo classExists("CP"); ?></td>
+                <td><?php echo classExists("DP"); ?></td>
+                <td><?php echo classExists("EP"); ?></td>
+                <td><?php echo classExists("FP"); ?></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -68,12 +68,12 @@
             </tr>
             <tr>
                 <td class="class-heading">MODIFIED</td>
-                <td><?php echo classexists("AM"); ?></td>
-                <td><?php echo classexists("BM"); ?></td>
-                <td><?php echo classexists("CM"); ?></td>
-                <td><?php echo classexists("DM"); ?></td>
-                <td><?php echo classexists("EM"); ?></td>
-                <td><?php echo classexists("FM"); ?></td>
+                <td><?php echo classExists("AM"); ?></td>
+                <td><?php echo classExists("BM"); ?></td>
+                <td><?php echo classExists("CM"); ?></td>
+                <td><?php echo classExists("DM"); ?></td>
+                <td><?php echo classExists("EM"); ?></td>
+                <td><?php echo classExists("FM"); ?></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -81,9 +81,9 @@
             </tr>
             <tr>
                 <td class="class-heading">CAM</td>
-                <td><?php echo classexists("CAMC"); ?></td>
-                <td><?php echo classexists("CAMT"); ?></td>
-                <td><?php echo classexists("CAMS"); ?></td>
+                <td><?php echo classExists("CAMC"); ?></td>
+                <td><?php echo classExists("CAMT"); ?></td>
+                <td><?php echo classExists("CAMS"); ?></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -94,8 +94,8 @@
             </tr>
             <tr>
                 <td class="class-heading">PRO</td>
-                <td><?php echo classexists("X"); ?></td>
-                <td><?php echo classexists("ZF"); ?></td>
+                <td><?php echo classExists("X"); ?></td>
+                <td><?php echo classExists("ZF"); ?></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -107,14 +107,14 @@
             </tr>
             <tr>
                 <td class="class-heading">OTHER</td>
-                <td><?php echo classexists("EVX"); ?></td>
-                <td><?php echo classexists("FSAE"); ?></td>
-                <td><?php echo classexists("HCS"); ?></td>
-                <td><?php echo classexists("HCR"); ?></td>
-                <td><?php echo classexists("KM"); ?></td>
-                <td><?php echo classexists("SSC"); ?></td>
-                <td><?php echo classexists("XSA"); ?></td>
-                <td><?php echo classexists("XSB"); ?></td>
+                <td><?php echo classExists("EVX"); ?></td>
+                <td><?php echo classExists("FSAE"); ?></td>
+                <td><?php echo classExists("HCS"); ?></td>
+                <td><?php echo classExists("HCR"); ?></td>
+                <td><?php echo classExists("KM"); ?></td>
+                <td><?php echo classExists("SSC"); ?></td>
+                <td><?php echo classExists("XSA"); ?></td>
+                <td><?php echo classExists("XSB"); ?></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
