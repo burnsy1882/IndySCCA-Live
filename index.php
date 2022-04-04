@@ -55,7 +55,7 @@ include_once 'functions.php';
                 ?>
 
                 <!-- Run Ticker Section -->
-                <?php echo sectionInclude("files/RunTickerTable.php", "run-ticker"); ?>
+                <?php echo sectionInclude("files/RunTickerTable.php", "w3-responsive run-ticker"); ?>
 
                 <!-- Class Links Section -->
                 <div class="w3-panel w3-center classes">

@@ -4,10 +4,6 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.w3-container {
-    padding: 0 10px;
-}
-
 .page-title {
     font-size: 30px;
     font-family: "Racing Sans One", cursive;
@@ -179,4 +175,13 @@ td:not(:first-child) {
 .w3-pronto-color-right {
     color: #000;
     background-color: #eaecef;
+}
+
+@media only screen and (max-width: 600px) {
+    .w3-container {
+        padding: 0;
+    }
+    .w3-panel {
+        padding: 0 5px;
+    }
 }
