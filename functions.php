@@ -1,98 +1,114 @@
 <?php
+/**
+ * FM Channel
+ *
+ * Set this to the FM channel of your FM broadcaster if in use, eg. 98.5;
+ * Leave at 0 if you do not utilize an FM broadcaster
+ */
+$fmChannel = 0;
 
-    /**
-     * FM Channel
-     *
-     * Set this to the FM channel of your FM broadcaster if in use, eg. 98.5;
-     * Leave at 0 if you do not utilize an FM broadcaster
-     */
-    $fmchannel = 0;
+/**
+ * Class table styling
+ *
+ * If set to True, the classes table on the index page will be ordered horizontally
+ * If set to False, the classes table on the index page will be ordered vertically
+ * Default is True
+ */
+$horizontalClasses = true;
 
-    /**
-     * Class table styling
-     *
-     * If set to True, the classes table on the index page will be ordered horizontally
-     * If set to False, the classes table on the index page will be ordered vertically
-     * Default is True
-     */
-    $horizontal_classes = True;
-
-    function sectionInclude($file, $cssClass)
+/**
+ * sectionInclude
+ *
+ * Function that takes a file's contents and inserts them in a new html div with a specified class.
+ * Does not show the html div if the file does not exist.
+ *
+ * @param string $file Relative path to contents of file to insert.
+ * @param string $cssClass Name to give inserted html div, used to stylize div. Add class name to stylesheet.css.
+ * @return string
+ */
+function sectionInclude($file, $cssClass)
+{
+    if (file_exists($file))
     {
-        if (file_exists($file))
-        {
-            return '<div class="w3-panel w3-center '.$cssClass.'">'.file_get_contents($file).'</div>';
-        }
+        return '<div class="w3-panel w3-center '.$cssClass.'">'.file_get_contents($file).'</div>';
+    }
+}
+
+/**
+ * sectionLinkInclude
+ *
+ * Function that takes adds a link to a file in a new html div with a specified class.
+ * Does not show the html div and link if the file does not exist.
+ *
+ * @param string $file Relative path to file to link to.
+ * @param string $cssClass Name to give inserted html div, used to stylize div. Add class name to stylesheet.css.
+ * @param string $text Text to use as html link in html div.
+ * @return string
+ */
+function sectionLinkInclude($file, $cssClass, $text)
+{
+    if (file_exists($file))
+    {
+        return '<div class="w3-panel w3-center '.$cssClass.'"><b><a href="'.$file.'">'.$text.'</a></b></div>';
+    }
+}
+
+/**
+ * classExists
+ *
+ * Function that creates a string with html links for autocross classes in the format of Mens / Womens.
+ * Function will show the class text regardless if the respective class file exists, but if it does, it will make the text a html link.
+ * Example: Input - CSP, Output - CSP / CSPL.
+ *
+ * @param string $class Text representation of a class, preferrably a shorthand version.
+ * @return string
+ */
+function classExists($class)
+{
+    $strReturn = "";
+
+    // Check mens class
+    if (file_exists("files/".$class.".php"))
+    {
+        $strReturn .= '<b><a href="files/'.$class.'.php">'.$class.'</a></b>';
+    }
+    else
+    {
+        $strReturn .= $class;
     }
 
-    function sectionIncludeHtml($file, $text, $htmlBefore, $htmlAfter)
+    $strReturn .= "&nbsp;/&nbsp;";
+
+    // Check womens class
+    if (file_exists("files/".$class."L.php"))
     {
-        if (file_exists($file))
-        {
-            return $htmlBefore.'<a href="'.$file.'">'.$text.'</a>'.$htmlAfter;
-        }
+        $strReturn .= '<b><a href="files/'.$class.'L.php">'.$class.'L</a></b>';
+    }
+    else
+    {
+        $strReturn .= $class."L";
     }
 
-    function sponsorexists($sponsor, $sponsorURL)
+    return $strReturn;
+}
+
+/**
+ * tableFileExists
+ *
+ * Function to create a string with a html link or just text.
+ *
+ * @param string $file Relative path to contents of file to insert.
+ * @param string $name Text to use as html link in html link.
+ * @return string
+ */
+function tableFileExists($file, $name)
+{
+    if (file_exists("files/".$file))
     {
-        if (file_exists("files/".$sponsor))
-        {
-            return '<a href="'.$sponsorURL.'"><img src="files/'.$sponsor.'" height="200"></a>';
-        }
+        return '<b><a href="files/'.$file.'">'.$name.'</a></b>';
     }
-
-    function classexists($class, $name)
+    else
     {
-        $strReturn = "";
-
-        // Check mens class
-        if (file_exists("files/".$class.".php"))
-        {
-            $strReturn .= '<b><a href="files/'.$class.'.php">'.$name.'</a></b>';
-        }
-        else
-        {
-            $strReturn .= $name;
-        }
-
-        return $strReturn;
+        return $name;
     }
-
-    function fileexists($file, $name = "", $show = TRUE)
-    {
-        if (file_exists("files/".$file))
-        {
-            return '<b><a href="files/'.$file.'">'.$name.'</a></b>';
-        }
-        else
-        {
-            if ($show)
-            {
-                return $name;
-            }
-            else
-            {
-                return "&nbsp;";
-            }
-        }
-    }
-
-    function fileexistshtml($file, $show = TRUE, $name = "", $before, $after)
-    {
-        if (file_exists("files/".$file))
-        {
-            return $before.'<b><a href="'.$file.'">'.$name.'</a></b>'.$after;
-        }
-        else
-        {
-            if ($show)
-            {
-                return $before.$name.$after;
-            }
-            else
-            {
-                return "&nbsp;";
-            }
-        }
-    }
-?>
+}
