@@ -15,6 +15,7 @@
                 <td><?php echo classexists("1SJ"); ?></td>
                 <td><?php echo classexists("1SK"); ?></td>
                 <td><?php echo classexists("1SM"); ?></td>
+                <td><?php echo classexists("1SMM"); ?></td>
                 <td><?php echo classexists("1SN"); ?></td>
                 <td><?php echo classexists("1SP"); ?></td>
             </tr>
@@ -32,6 +33,7 @@
                 <td><?php echo classexists("1J"); ?></td>
                 <td><?php echo classexists("1K"); ?></td>
                 <td><?php echo classexists("1M"); ?></td>
+                <td><?php echo classexists("1MM"); ?></td>
                 <td><?php echo classexists("1N"); ?></td>
                 <td><?php echo classexists("1P"); ?></td>
             </tr>
@@ -49,6 +51,7 @@
                 <td><?php echo classexists("2J"); ?></td>
                 <td><?php echo classexists("2K"); ?></td>
                 <td><?php echo classexists("2M"); ?></td>
+                <td><?php echo classexists("2MM"); ?></td>
                 <td><?php echo classexists("2N"); ?></td>
                 <td><?php echo classexists("2P"); ?></td>
             </tr>
@@ -66,6 +69,7 @@
                 <td><?php echo classexists("3J"); ?></td>
                 <td><?php echo classexists("3K"); ?></td>
                 <td><?php echo classexists("3M"); ?></td>
+                <td><?php echo classexists("3MM"); ?></td>
                 <td><?php echo classexists("3N"); ?></td>
                 <td><?php echo classexists("3P"); ?></td>
             </tr>

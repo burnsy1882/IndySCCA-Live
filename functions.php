@@ -10,11 +10,19 @@ $fmChannel = 0;
 /**
  * Class table styling
  *
- * If set to True, the classes table on the index page will be ordered horizontally
- * If set to False, the classes table on the index page will be ordered vertically
- * Default is True
+ * If set to true, the classes table on the index page will be ordered horizontally
+ * If set to false, the classes table on the index page will be ordered vertically
+ * Default is true
  */
 $horizontalClasses = true;
+
+/**
+ * Hide unused classes
+ *
+ * If set to true, the classes table on the index page will not show empty classes
+ * Default is false
+ */
+$hiddenClasses = false;
 
 /**
  * sectionInclude
@@ -66,11 +74,14 @@ function sectionLinkInclude($file, $cssClass, $text)
 function classExists($class)
 {
     $strReturn = "";
+    $mens = false;
+    $womens = false;
 
     // Check mens class
     if (file_exists("files/".$class.".php"))
     {
         $strReturn .= '<b><a href="files/'.$class.'.php">'.$class.'</a></b>';
+        $mens = true;
     }
     else
     {
@@ -80,16 +91,31 @@ function classExists($class)
     $strReturn .= "&nbsp;/&nbsp;";
 
     // Check womens class
-    if (file_exists("files/".$class."L.php"))
+    if (file_exists("files/L".$class.".php"))
     {
-        $strReturn .= '<b><a href="files/'.$class.'L.php">'.$class.'L</a></b>';
+        $strReturn .= '<b><a href="files/L'.$class.'.php">L'.$class.'</a></b>';
+        $womens = true;
     }
     else
     {
-        $strReturn .= $class."L";
+        $strReturn .= "L".$class;
     }
 
-    return $strReturn;
+    if ($GLOBALS['hiddenClasses'])
+    {
+        if ($mens == true || $womens == true)
+        {
+            return $strReturn;
+        }
+        else
+        {
+            return "&nbsp;";
+        }
+    }
+    else
+    {
+        return $strReturn;
+    }
 }
 
 /**

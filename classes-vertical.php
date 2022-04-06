@@ -82,6 +82,12 @@
                 <td><?php echo classexists("3M"); ?></td>
             </tr>
             <tr style="white-space: nowrap;">
+                <td><?php echo classexists("1SMM"); ?></td>
+                <td><?php echo classexists("1MM"); ?></td>
+                <td><?php echo classexists("2MM"); ?></td>
+                <td><?php echo classexists("3MM"); ?></td>
+            </tr>
+            <tr style="white-space: nowrap;">
                 <td><?php echo classexists("1SN"); ?></td>
                 <td><?php echo classexists("1N"); ?></td>
                 <td><?php echo classexists("2N"); ?></td>
