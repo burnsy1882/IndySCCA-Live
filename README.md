@@ -17,5 +17,5 @@ GitHub repository for the IndySCCA.org live timing website.
    - functions.php - Alter the variables fmchannel and horizontal_classes to your liking
 4. Upload all of the files and folders to a subfolder of your liking on your webserver.
 5. Alter your TSLive program settings "Dir:" and "Non Class dir:" to point to the "files" subfolder you uploaded. In this example image, both settings are pointing to a live subfolder
-    - ![TSLive](/files/tslive.png)
+    - ![TSLive](/images/tslive.png)
 6. Begin your event and enjoy your live timing.
