@@ -60,18 +60,36 @@
                 <td><?php echo classexists("3CL"); ?></td>
                 <td><?php echo classexists("3A"); ?></td>
                 <td><?php echo classexists("3B"); ?></td>
-                <td><?php echo classexists("3C"); ?></td>
-                <td><?php echo classexists("3D"); ?></td>
                 <td><?php echo classexists("3E"); ?></td>
-                <td><?php echo classexists("3F"); ?></td>
-                <td><?php echo classexists("3G"); ?></td>
                 <td><?php echo classexists("3H"); ?></td>
-                <td><?php echo classexists("3J"); ?></td>
                 <td><?php echo classexists("3K"); ?></td>
-                <td><?php echo classexists("3M"); ?></td>
-                <td><?php echo classexists("3MM"); ?></td>
                 <td><?php echo classexists("3N"); ?></td>
                 <td><?php echo classexists("3P"); ?></td>
+                <td><?php echo classexists("RP"); ?></td>
+                <td><?php echo classexists("RPAF"); ?></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="class-heading">MISC</td>
+                <td><?php echo classexists("EX"); ?></td>
+                <td><?php echo classexists("NOV"); ?></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
         </tbody>
     </table>
