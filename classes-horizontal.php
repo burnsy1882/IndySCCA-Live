@@ -77,7 +77,7 @@
                 <td class="class-heading">MISC</td>
                 <td><?php echo classexists("EX"); ?></td>
                 <td><?php echo classexists("NOV"); ?></td>
-                <td>&nbsp;</td>
+                <td><?php echo classexists("METAL"); ?></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
