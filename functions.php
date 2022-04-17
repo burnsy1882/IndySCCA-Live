@@ -17,6 +17,14 @@ $fmChannel = 0;
 $horizontalClasses = true;
 
 /**
+ * Hide unused classes
+ *
+ * If set to true, the classes table on the index page will not show empty classes
+ * Default is false
+ */
+$hiddenClasses = false;
+
+/**
  * sectionInclude
  *
  * Function that takes a file's contents and inserts them in a new html div with a specified class.
@@ -61,35 +69,40 @@ function sectionLinkInclude($file, $cssClass, $text)
  * Example: Input - CSP, Output - CSP / CSPL.
  *
  * @param string $class Text representation of a class, preferrably a shorthand version.
+ * @param string $name Long form name of class
  * @return string
  */
-function classExists($class)
+function classExists($class, $name)
 {
     $strReturn = "";
+    $exists = false;
 
-    // Check mens class
+    // Check class
     if (file_exists("files/".$class.".php"))
     {
-        $strReturn .= '<b><a href="files/'.$class.'.php">'.$class.'</a></b>';
+        $strReturn .= '<b><a href="files/'.$class.'.php">'.$name.'</a></b>';
+        $exists = true;
     }
     else
     {
-        $strReturn .= $class;
+        $strReturn .= $name;
     }
 
-    $strReturn .= "&nbsp;/&nbsp;";
-
-    // Check womens class
-    if (file_exists("files/".$class."L.php"))
+    if ($GLOBALS['hiddenClasses'])
     {
-        $strReturn .= '<b><a href="files/'.$class.'L.php">'.$class.'L</a></b>';
+        if ($exists == true)
+        {
+            return $strReturn;
+        }
+        else
+        {
+            return "&nbsp;";
+        }
     }
     else
     {
-        $strReturn .= $class."L";
+        return $strReturn;
     }
-
-    return $strReturn;
 }
 
 /**
