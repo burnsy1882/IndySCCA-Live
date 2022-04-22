@@ -80,12 +80,12 @@ function classExists($class)
     // Check mens class
     if (file_exists("files/".$class.".php"))
     {
-        $strReturn .= '<b><a href="files/'.$class.'.php">'.$class.'</a></b>';
+        $strReturn .= '<td><b><a href="files/'.$class.'.php">'.$class.'</a></b>';
         $mens = true;
     }
     else
     {
-        $strReturn .= $class;
+        $strReturn .= "<td>".$class;
     }
 
     $strReturn .= "&nbsp;/&nbsp;";
@@ -93,12 +93,12 @@ function classExists($class)
     // Check womens class
     if (file_exists("files/L".$class.".php"))
     {
-        $strReturn .= '<b><a href="files/L'.$class.'.php">L'.$class.'</a></b>';
+        $strReturn .= '<b><a href="files/L'.$class.'.php">L'.$class.'</a></b></td>';
         $womens = true;
     }
     else
     {
-        $strReturn .= "L".$class;
+        $strReturn .= "L".$class."</td>";
     }
 
     if ($GLOBALS['hiddenClasses'])
@@ -107,10 +107,10 @@ function classExists($class)
         {
             return $strReturn;
         }
-        else
-        {
-            return "&nbsp;";
-        }
+//         else
+//         {
+//             return "&nbsp;";
+//         }
     }
     else
     {

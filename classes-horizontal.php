@@ -1,115 +1,92 @@
 <div class="w3-responsive">
-    <table id="tbl01" class="w3-table w3-striped w3-border w3-bordered w3-centered data-table">
+    <table id="tblClasses" class="w3-table w3-striped w3-border w3-bordered w3-centered data-table">
         <tbody>
             <tr>
                 <td class="class-heading">GROUP 1 - STREET</td>
-                <td><?php echo classExists("1SCL"); ?></td>
-                <td><?php echo classExists("1SA"); ?></td>
-                <td><?php echo classExists("1SB"); ?></td>
-                <td><?php echo classExists("1SAB"); ?></td>
-                <td><?php echo classExists("1SC"); ?></td>
-                <td><?php echo classExists("1SD"); ?></td>
-                <td><?php echo classExists("1SCD"); ?></td>
-                <td><?php echo classExists("1SE"); ?></td>
-                <td><?php echo classExists("1SF"); ?></td>
-                <td><?php echo classExists("1SG"); ?></td>
-                <td><?php echo classExists("1SFG"); ?></td>
-                <td><?php echo classExists("1SH"); ?></td>
-                <td><?php echo classExists("1SJ"); ?></td>
-                <td><?php echo classExists("1SK"); ?></td>
-                <td><?php echo classExists("1SJK"); ?></td>
-                <td><?php echo classExists("1SM"); ?></td>
-                <td><?php echo classExists("1SMM"); ?></td>
-                <td><?php echo classExists("1SN"); ?></td>
-                <td><?php echo classExists("1SP"); ?></td>
+                <?php echo classExists("1SCL"); ?>
+                <?php echo classExists("1SA"); ?>
+                <?php echo classExists("1SB"); ?>
+                <?php echo classExists("1SAB"); ?>
+                <?php echo classExists("1SC"); ?>
+                <?php echo classExists("1SD"); ?>
+                <?php echo classExists("1SCD"); ?>
+                <?php echo classExists("1SE"); ?>
+                <?php echo classExists("1SF"); ?>
+                <?php echo classExists("1SG"); ?>
+                <?php echo classExists("1SFG"); ?>
+                <?php echo classExists("1SH"); ?>
+                <?php echo classExists("1SJ"); ?>
+                <?php echo classExists("1SK"); ?>
+                <?php echo classExists("1SJK"); ?>
+                <?php echo classExists("1SM"); ?>
+                <?php echo classExists("1SMM"); ?>
+                <?php echo classExists("1SN"); ?>
+                <?php echo classExists("1SP"); ?>
             </tr>
             <tr>
                 <td class="class-heading">GROUP 1</td>
-                <td><?php echo classExists("1CL"); ?></td>
-                <td><?php echo classExists("1A"); ?></td>
-                <td><?php echo classExists("1B"); ?></td>
-                <td><?php echo classExists("1AB"); ?></td>
-                <td><?php echo classExists("1C"); ?></td>
-                <td><?php echo classExists("1D"); ?></td>
-                <td><?php echo classExists("1CD"); ?></td>
-                <td><?php echo classExists("1E"); ?></td>
-                <td><?php echo classExists("1F"); ?></td>
-                <td><?php echo classExists("1G"); ?></td>
-                <td><?php echo classExists("1FG"); ?></td>
-                <td><?php echo classExists("1H"); ?></td>
-                <td><?php echo classExists("1J"); ?></td>
-                <td><?php echo classExists("1K"); ?></td>
-                <td><?php echo classExists("1JK"); ?></td>
-                <td><?php echo classExists("1M"); ?></td>
-                <td><?php echo classExists("1MM"); ?></td>
-                <td><?php echo classExists("1N"); ?></td>
-                <td><?php echo classExists("1P"); ?></td>
+                <?php echo classExists("1CL"); ?>
+                <?php echo classExists("1A"); ?>
+                <?php echo classExists("1B"); ?>
+                <?php echo classExists("1AB"); ?>
+                <?php echo classExists("1C"); ?>
+                <?php echo classExists("1D"); ?>
+                <?php echo classExists("1CD"); ?>
+                <?php echo classExists("1E"); ?>
+                <?php echo classExists("1F"); ?>
+                <?php echo classExists("1G"); ?>
+                <?php echo classExists("1FG"); ?>
+                <?php echo classExists("1H"); ?>
+                <?php echo classExists("1J"); ?>
+                <?php echo classExists("1K"); ?>
+                <?php echo classExists("1JK"); ?>
+                <?php echo classExists("1M"); ?>
+                <?php echo classExists("1MM"); ?>
+                <?php echo classExists("1N"); ?>
+                <?php echo classExists("1P"); ?>
             </tr>
             <tr>
                 <td class="class-heading">GROUP 2</td>
-                <td><?php echo classExists("2CL"); ?></td>
-                <td><?php echo classExists("2A"); ?></td>
-                <td><?php echo classExists("2B"); ?></td>
-                <td><?php echo classExists("2AB"); ?></td>
-                <td><?php echo classExists("2C"); ?></td>
-                <td><?php echo classExists("2D"); ?></td>
-                <td><?php echo classExists("2CD"); ?></td>
-                <td><?php echo classExists("2E"); ?></td>
-                <td><?php echo classExists("2F"); ?></td>
-                <td><?php echo classExists("2G"); ?></td>
-                <td><?php echo classExists("2FG"); ?></td>
-                <td><?php echo classExists("2H"); ?></td>
-                <td><?php echo classExists("2J"); ?></td>
-                <td><?php echo classExists("2K"); ?></td>
-                <td><?php echo classExists("2JK"); ?></td>
-                <td><?php echo classExists("2M"); ?></td>
-                <td><?php echo classExists("2MM"); ?></td>
-                <td><?php echo classExists("2N"); ?></td>
-                <td><?php echo classExists("2P"); ?></td>
+                <?php echo classExists("2CL"); ?>
+                <?php echo classExists("2A"); ?>
+                <?php echo classExists("2B"); ?>
+                <?php echo classExists("2AB"); ?>
+                <?php echo classExists("2C"); ?>
+                <?php echo classExists("2D"); ?>
+                <?php echo classExists("2CD"); ?>
+                <?php echo classExists("2E"); ?>
+                <?php echo classExists("2F"); ?>
+                <?php echo classExists("2G"); ?>
+                <?php echo classExists("2FG"); ?>
+                <?php echo classExists("2H"); ?>
+                <?php echo classExists("2J"); ?>
+                <?php echo classExists("2K"); ?>
+                <?php echo classExists("2JK"); ?>
+                <?php echo classExists("2M"); ?>
+                <?php echo classExists("2MM"); ?>
+                <?php echo classExists("2N"); ?>
+                <?php echo classExists("2P"); ?>
             </tr>
             <tr>
                 <td class="class-heading">GROUP 3</td>
-                <td><?php echo classExists("3CL"); ?></td>
-                <td><?php echo classExists("3A"); ?></td>
-                <td><?php echo classExists("3B"); ?></td>
-                <td><?php echo classExists("3AB"); ?></td>
-                <td><?php echo classExists("3E"); ?></td>
-                <td><?php echo classExists("3H"); ?></td>
-                <td><?php echo classExists("3K"); ?></td>
-                <td><?php echo classExists("3N"); ?></td>
-                <td><?php echo classExists("3P"); ?></td>
-                <td><?php echo classExists("RP"); ?></td>
-                <td><?php echo classExists("RPAF"); ?></td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <?php echo classExists("3CL"); ?>
+                <?php echo classExists("3A"); ?>
+                <?php echo classExists("3B"); ?>
+                <?php echo classExists("3AB"); ?>
+                <?php echo classExists("3E"); ?>
+                <?php echo classExists("3H"); ?>
+                <?php echo classExists("3K"); ?>
+                <?php echo classExists("3N"); ?>
+                <?php echo classExists("3P"); ?>
+                <?php echo classExists("RP"); ?>
+                <?php echo classExists("RPAF"); ?>
             </tr>
             <tr>
                 <td class="class-heading">MISC</td>
-                <td><?php echo classExists("EX"); ?></td>
-                <td><?php echo classExists("NOV"); ?></td>
-                <td><?php echo classExists("METAL"); ?></td>
-                <td><?php echo classExists("MISC"); ?></td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <?php echo classExists("EX"); ?>
+                <?php echo classExists("NOV"); ?>
+                <?php echo classExists("METAL"); ?>
+                <?php echo classExists("MISC"); ?>
             </tr>
         </tbody>
     </table>
