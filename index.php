@@ -73,32 +73,6 @@ include_once 'functions.php';
                     ?>
                 </div>
 
-                <!-- PAX Times Section -->
-                <div class="w3-panel w3-center w3-responsive pax">
-                    <table id="tblPax" class="w3-table w3-striped w3-border w3-bordered w3-centered data-table">
-                        <thead>
-                            <tr class="panel-heading">
-                                <th colspan="3">
-                                    PAX
-                                </th>
-                            </tr>
-                        </head>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <?php echo tableFileExists("PaxIndexDay1.html", "PAX Day 1"); ?>
-                                </td>
-                                <td>
-                                    <?php echo tableFileExists("PaxIndexDay2.html", "PAX Day 2"); ?>
-                                </td>
-                                <td>
-                                    <?php echo tableFileExists("PaxIndexOverall.html", "PAX Overall"); ?>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
                 <!-- RAW Times Section -->
                 <div class="w3-panel w3-center w3-resposive raw">
                     <table id="tblRaw" class="w3-table w3-striped w3-border w3-bordered w3-centered data-table">
