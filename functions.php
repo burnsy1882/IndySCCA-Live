@@ -17,6 +17,14 @@ $fmChannel = 0;
 $horizontalClasses = true;
 
 /**
+ * Hide unused classes
+ *
+ * If set to true, the classes table on the index page will not show empty classes
+ * Default is false
+ */
+$hiddenClasses = false;
+
+/**
  * sectionInclude
  *
  * Function that takes a file's contents and inserts them in a new html div with a specified class.
@@ -66,30 +74,46 @@ function sectionLinkInclude($file, $cssClass, $text)
 function classExists($class)
 {
     $strReturn = "";
+    $mens = false;
+    $womens = false;
 
     // Check mens class
-    if (file_exists("files/".$class.".php"))
+    $mensClass = similar_file_exists("files/".$class.".php");
+    if ($mensClass)
     {
-        $strReturn .= '<b><a href="files/'.$class.'.php">'.$class.'</a></b>';
+        $strReturn .= '<td><b><a href="'.$mensClass.'">'.$class.'</a></b>';
+        $mens = true;
     }
     else
     {
-        $strReturn .= $class;
+        $strReturn .= "<td>".$class;
     }
 
     $strReturn .= "&nbsp;/&nbsp;";
 
     // Check womens class
-    if (file_exists("files/".$class."L.php"))
+    $womensClass = similar_file_exists("files/".$class."L.php");
+    if ($womensClass)
     {
-        $strReturn .= '<b><a href="files/'.$class.'L.php">'.$class.'L</a></b>';
+        $strReturn .= '<b><a href="'.$womensClass.'">'.$class.'L</a></b></td>';
+        $womens = true;
     }
     else
     {
-        $strReturn .= $class."L";
+        $strReturn .= $class."L</td>";
     }
 
-    return $strReturn;
+    if ($GLOBALS['hiddenClasses'])
+    {
+        if ($mens == true || $womens == true)
+        {
+            return $strReturn;
+        }
+    }
+    else
+    {
+        return $strReturn;
+    }
 }
 
 /**
@@ -111,4 +135,30 @@ function tableFileExists($file, $name)
     {
         return $name;
     }
+}
+
+/**
+ * Alternative to file_exists() that will also return true if a file
+ * exists with the same name in a difference case.
+ *
+ * @param string $filename
+ */
+function similar_file_exists($file)
+{
+    if (file_exists($file))
+    {
+        return $file;
+    }
+
+    $lowerFile = strtolower($file);
+
+    foreach (glob(dirname($file) . '/*') as $file)
+    {
+        if (strtolower($file) == $lowerFile)
+        {
+            return $file;
+        }
+    }
+
+    return false;
 }
