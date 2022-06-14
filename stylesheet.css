@@ -69,6 +69,10 @@ td:not(:first-child) {
     padding: 10px;
 }
 
+td:last-child {
+    border-right: 1px solid #ccc;
+}
+
 .w3-bordered tr {
     border-bottom: 1px solid #ccc;
 }
