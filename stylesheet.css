@@ -69,7 +69,7 @@ td:not(:first-child) {
     padding: 10px;
 }
 
-td:last-child {
+#tb101 td:last-child {
     border-right: 1px solid #ccc;
 }
 
