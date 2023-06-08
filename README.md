@@ -1,5 +1,7 @@
 # IndySCCA.org Live Timing
 
+[![MegaLinter](https://github.com/burnsy1882/IndySCCA-Live/actions/workflows/mega-linter.yml/badge.svg)](https://github.com/burnsy1882/IndySCCA-Live/actions/workflows/mega-linter.yml)
+
 GitHub repository for the IndySCCA.org live timing website.
 
 ### Branches:
