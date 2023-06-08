@@ -62,7 +62,7 @@ function eventTitleInclude($file, $cssClass)
         $contents = file($file);
         $html     = '<div class="w3-panel w3-center '.$cssClass.'">';
 
-        foreach((array) $contents as $line)
+        foreach((array)$contents as $line)
         {
             $html .= $line;
             $html .= "</div>";
