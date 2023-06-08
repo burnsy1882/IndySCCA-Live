@@ -89,7 +89,7 @@
                 <td><?php echo classExists("EM"); ?></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td><?php echo classExists("XSA"); ?></td>
+                <td><?php echo classExists("XA"); ?></td>
             </tr>
             <tr style="white-space: nowrap;">
                 <td><?php echo classExists("FS"); ?></td>
@@ -100,7 +100,7 @@
                 <td><?php echo classExists("FM"); ?></td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td><?php echo classExists("XSB"); ?></td>
+                <td><?php echo classExists("XB"); ?></td>
             </tr>
             <tr style="white-space: nowrap;">
                 <td><?php echo classExists("GS"); ?></td>

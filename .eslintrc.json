@@ -1,0 +1,66 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "standard"
+    ],
+    // "plugins": [
+    //     "html",
+    //     "standard",
+    //     "jquery"
+    // ],
+    "env": {
+        "browser": true,
+        "jquery": true
+    },
+    "settings": {
+        "html/indent": "+4"
+    },
+    "rules": {
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "spaced-comment": "warn",
+        "no-undef": "off",
+        "brace-style": [
+            "error",
+            "allman"
+        ],
+        "no-extra-parens": "warn",
+        "no-unused-vars": "warn",
+        "complexity": [
+            "error", 30
+        ],
+        "default-case": "error",
+        "eol-last": [
+            "error",
+            "always"
+        ],
+        "no-multi-assign": "error",
+        "require-jsdoc": "error",
+        "valid-jsdoc": [
+            "error", {
+                "prefer": {
+                    "arg": "param",
+                    "argument": "param",
+                    "class": "constructor",
+                    "return": "return",
+                    "virtual": "abstract"
+                },
+                "matchDescription": ".+",
+                "requireReturn": true,
+                "requireReturnType": false,
+                "requireParamDescription": true,
+                "requireParamType": false,
+                "requireReturnDescription": true
+            }
+        ],
+
+        "quotes": "warn",
+        "eqeqeq": "warn",
+        "no-empty-function": "error"
+    }
+}

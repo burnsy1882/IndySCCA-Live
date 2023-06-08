@@ -32,13 +32,48 @@ $hiddenClasses = false;
  *
  * @param string $file Relative path to contents of file to insert.
  * @param string $cssClass Name to give inserted html div, used to stylize div. Add class name to stylesheet.css.
- * @return string
+ *
+ * @return null|string
  */
 function sectionInclude($file, $cssClass)
 {
     if (file_exists($file))
     {
         return '<div class="w3-panel w3-center '.$cssClass.'">'.file_get_contents($file).'</div>';
+    }
+    else
+    {
+        return null;
+    }
+}
+
+/**
+ * eventTitleInclude
+ *
+ * @param string $file Relative path to contents of file to insert.
+ * @param string $cssClass Name to give inserted html div, used to stylize div. Add class name to stylesheet.css.
+ *
+ * @return null|string
+ */
+function eventTitleInclude($file, $cssClass)
+{
+    if (file_exists($file))
+    {
+        $contents = file($file);
+        $html     = '<div class="w3-panel w3-center '.$cssClass.'">';
+
+        foreach((array) $contents as $line)
+        {
+            $html .= $line;
+            $html .= "</div>";
+        }
+
+        $html .= '</div>';
+        return $html;
+    }
+    else
+    {
+        return null;
     }
 }
 
@@ -51,13 +86,18 @@ function sectionInclude($file, $cssClass)
  * @param string $file Relative path to file to link to.
  * @param string $cssClass Name to give inserted html div, used to stylize div. Add class name to stylesheet.css.
  * @param string $text Text to use as html link in html div.
- * @return string
+ *
+ * @return null|string
  */
 function sectionLinkInclude($file, $cssClass, $text)
 {
     if (file_exists($file))
     {
         return '<div class="w3-panel w3-center '.$cssClass.'"><b><a href="'.$file.'">'.$text.'</a></b></div>';
+    }
+    else
+    {
+        return null;
     }
 }
 
@@ -69,20 +109,22 @@ function sectionLinkInclude($file, $cssClass, $text)
  * Example: Input - CSP, Output - CSP / CSPL.
  *
  * @param string $class Text representation of a class, preferrably a shorthand version.
+ *
  * @return string
  */
 function classExists($class)
 {
     $strReturn = "";
-    $mens = false;
-    $womens = false;
+    $mens      = false;
+    $womens    = false;
 
     // Check mens class
     $mensClass = similar_file_exists("files/".$class.".php");
     if ($mensClass)
     {
         $strReturn .= '<td><b><a href="'.$mensClass.'">'.$class.'</a></b>';
-        $mens = true;
+        // $strReturn .= '<td><b><a href="showClass.php?class='.$class.'">'.$class.'</a></b>';
+        $mens       = true;
     }
     else
     {
@@ -96,7 +138,8 @@ function classExists($class)
     if ($womensClass)
     {
         $strReturn .= '<b><a href="'.$womensClass.'">'.$class.'L</a></b></td>';
-        $womens = true;
+        // $strReturn .= '<b><a href="showClass.php?class='.$class.'L">'.$class.'L</a></b></td>';
+        $womens     = true;
     }
     else
     {
@@ -123,6 +166,7 @@ function classExists($class)
  *
  * @param string $file Relative path to contents of file to insert.
  * @param string $name Text to use as html link in html link.
+ *
  * @return string
  */
 function tableFileExists($file, $name)
@@ -141,7 +185,9 @@ function tableFileExists($file, $name)
  * Alternative to file_exists() that will also return true if a file
  * exists with the same name in a difference case.
  *
- * @param string $filename
+ * @param string $file Relative path to contents of file to insert.
+ *
+ * @return string
  */
 function similar_file_exists($file)
 {
@@ -152,13 +198,11 @@ function similar_file_exists($file)
 
     $lowerFile = strtolower($file);
 
-    foreach (glob(dirname($file) . '/*') as $file)
+    foreach ((array)glob(dirname($file) . '/*') as $file)
     {
         if (strtolower($file) == $lowerFile)
         {
             return $file;
         }
     }
-
-    return false;
 }

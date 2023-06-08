@@ -30,7 +30,8 @@ include_once 'functions.php';
                 <?php echo sectionInclude("pageTitle.html", "page-title"); ?>
 
                 <!-- Event Title Section -->
-                <?php echo sectionInclude("files/eventName.html", "event-title"); ?>
+                <?php //echo sectionInclude("files/eventName.html", "event-title"); ?>
+                <?php echo eventTitleInclude("files/eventName.html", "event-title"); ?>
 
                 <!-- Sponsorship Section -->
                 <?php echo sectionInclude("sponsors.html", "sponsors"); ?>
@@ -125,6 +126,32 @@ include_once 'functions.php';
                     </table>
                 </div>
 
+                <!-- Novice Times Section -->
+                <div class="w3-panel w3-center w3-resposive raw">
+                    <table id="tblRaw" class="w3-table w3-striped w3-border w3-bordered w3-centered data-table">
+                        <thead>
+                            <tr class="panel-heading">
+                                <th align="center" colspan="3">
+                                    Novice
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>
+                                    <?php echo tableFileExists("NoviceIndexDay1.html", "Novice Day 1"); ?>
+                                </td>
+                                <td>
+                                    <?php echo tableFileExists("NoviceIndexDay2.html", "Novice Day 2"); ?>
+                                </td>
+                                <td>
+                                    <?php echo tableFileExists("NoviceIndexOverall.html", "Novice Overall"); ?>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 <!-- Run/Work Order Section -->
                 <div class="w3-panel w3-center run-order">
                     <?php include 'runOrder.php'; ?>
@@ -141,14 +168,14 @@ include_once 'functions.php';
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="http://www.ProntoTimingSystem.com">
-                                        <img src="http://www.ProntoTimingSystem.com/ProntoLogo.jpg" width="270" height="110">
+                                    <a href="https://www.ProntoTimingSystem.com">
+                                        <img src="https://www.ProntoTimingSystem.com/ProntoLogo.jpg" width="270" height="110">
                                     </a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="http://www.ProntoTimingSystem.com">www.ProntoTimingSystem.com</a>
+                                    <a href="https://www.ProntoTimingSystem.com">www.ProntoTimingSystem.com</a>
                                 </td>
                             </tr>
                             <tr>
@@ -163,7 +190,7 @@ include_once 'functions.php';
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="http://www.prontotimingsystem.com/"><font face="Arial" size="-2">Copyright &copy; Pronto Timing System 2007-2022 All Rights Reserved.</font></a>
+                                    <a href="https://www.prontotimingsystem.com/"><font face="Arial" size="-2">Copyright &copy; Pronto Timing System 2007-2023 All Rights Reserved.</font></a>
                                 </td>
                             </tr>
                             <tr>

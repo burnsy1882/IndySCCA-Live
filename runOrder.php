@@ -1,15 +1,14 @@
 <?php
 /**
- * heats
- *
  * Variable to count number of heats generated from tsAdmin
  */
 $heats = 0;
 
-foreach (glob("./files/Heat[0-9]RunOrder.html") as $file)
+foreach ((array)glob("./files/Heat[0-9]RunOrder.html") as $file)
 {
     $heats++;
 }
+
 ?>
 <div class="w3-responsive">
     <table id="tbl-runOrder" class="w3-table w3-striped w3-border w3-bordered w3-centered">

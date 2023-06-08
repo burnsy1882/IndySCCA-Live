@@ -1,5 +1,5 @@
 <div class="w3-responsive">
-    <table id="tbl01" class="w3-table w3-striped w3-border w3-bordered w3-centered data-table">
+    <table id="classes" class="w3-table w3-striped w3-border w3-bordered w3-centered data-table">
         <tbody>
             <tr>
                 <td class="class-heading">STREET</td>
@@ -76,8 +76,8 @@
                 <?php echo classExists("HCR"); ?>
                 <?php echo classExists("KM"); ?>
                 <?php echo classExists("SSC"); ?>
-                <?php echo classExists("XSA"); ?>
-                <?php echo classExists("XSB"); ?>
+                <?php echo classExists("XA"); ?>
+                <?php echo classExists("XB"); ?>
             </tr>
         </tbody>
     </table>

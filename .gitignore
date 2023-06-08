@@ -108,3 +108,10 @@ MANIFEST
 # End of https://www.toptal.com/developers/gitignore/api/backup,eclipse
 
 report/
+
+files/*
+!files/README.md
+
+### MegaLinter ###
+megalinter-reports/
+.phplint.cache/
