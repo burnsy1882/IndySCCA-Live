@@ -100,6 +100,10 @@ td:not(:first-child) {
     border: 0;
 }
 
+#tblHeader td:last-child {
+    border-right: 0;
+}
+
 #tb101 td:last-child {
     border-right: 1px solid #ccc;
 }
